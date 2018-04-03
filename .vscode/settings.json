@@ -1,16 +1,14 @@
-"liveSassCompile.settings.formats":[
-        // This is Default.
-        {
-            "format": "expanded",
-            "extensionName": ".css",
-            "savePath": "~/../../build/styles"
-        },
-        // You can add more
-        {
+{
+    "liveSassCompile.settings.formats": [
+    {
+      "format": "expanded",
+      "extensionName": ".css",
+      "savePath": "~/../../build/styles"
+    },
+    {
             "format": "compressed",
             "extensionName": ".min.css",
             "savePath": "~/../../build/styles"
         },
-
-
-    ]
+  ],
+}
