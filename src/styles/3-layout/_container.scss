@@ -12,6 +12,7 @@
 .container_half_full {
     min-width: 50%;
     max-width: 50%;
+    background: yellow;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
