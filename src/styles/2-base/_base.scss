@@ -1,0 +1,188 @@
+html {
+    font-size: 16px;
+}
+
+// TYPOGRAPHY
+// Small screens max-width 768px
+@media screen and (max-width: 768px) {
+    .font_size_mega {
+        font-family: $font_headings;
+        color: $main-text-color;
+        font-weight: 800;
+        opacity: 0.8;
+        font-size: 2rem;
+        line-height: 3.125rem;
+        padding: 1rem 0 1rem 0;
+    }
+    
+    h1, .h1 {
+        font-family: $font_headings;
+        color: $main-text-color;
+        font-weight: 800;
+        opacity: 0.8;
+        font-size: 1.875rem;
+        line-height: 2.625rem;
+        padding: 0 0 1rem 0;
+    }
+
+    h2, .h2 {
+        font-family: $font_headings;
+        color: $main-text-color;
+        font-weight: 800;
+        opacity: 0.8;
+        font-size: 1.25rem;
+        line-height: 1.938rem;
+        padding: 0 0 0.25rem 0;
+    }
+
+    h3, .h3 {
+        font-family: $font_headings;
+        color: $main-text-color;
+        font-weight: 800;
+        opacity: 0.8;
+        font-size: 1.125rem;
+        line-height: 1.938rem;
+        padding: 0.25rem 0 0.25rem 0;
+    }
+
+    h4, .h4 {
+        font-family: $font_headings;
+        color: $main-text-color;
+        font-weight: 800;
+        opacity: 0.8;
+        font-size: 1.125rem;
+        line-height: 1.938rem;
+        padding: 0.25rem 0 0.25rem 0;
+    }
+
+    h5, .h5 {
+        font-family: $font_headings;
+        color: $main-text-color;
+        font-weight: 800;
+        opacity: 0.8;
+        font-size: 1.125rem;
+        line-height: 1.938rem;
+        padding: 0.25rem 0 0.25rem 0;
+    }
+
+    h6, .h6 {
+        font-family: $font_headings;
+        color: $main-text-color;
+        font-weight: 800;
+        opacity: 0.8;
+        font-size: 0.8125rem;
+        line-height: 1.25rem;
+        padding: 0.5rem 0 0.25rem 0;
+    }
+
+    .p_lead {
+        font-family: $font_p_lead;
+        color: $main-text-color;
+        opacity: 0.75;
+        font-size: 1.25rem;
+        line-height: 2.125rem;
+        padding: 0 0 0.25rem 0;
+    }
+
+    p, .p {
+        font-family: $font_paragraph;
+        color: $main-text-color;
+        font-weight: 400;
+        opacity: 0.75;
+        font-size: 1rem;
+        line-height: 1.688rem;
+        padding: 0 0 1rem 0;
+    }
+}
+
+// Other screens min-width 768px
+@media screen and (min-width: 768px) {
+    .font_size_mega {
+        font-family: $font_headings;
+        color: $main-text-color;
+        font-weight: 800;
+        opacity: 0.8;
+        font-size: 3.75rem;
+        line-height: 5.188rem;
+        padding: 2rem 0 2rem 0;
+    }
+    
+    h1, .h1 {
+        font-family: $font_headings;
+        color: $main-text-color;
+        font-weight: 800;
+        opacity: 0.8;
+        font-size: 2.875rem;
+        line-height: 4rem;
+        padding: 0 0 2rem 0;
+    }
+
+    h2, .h2 {
+        font-family: $font_headings;
+        color: $main-text-color;
+        font-weight: 800;
+        opacity: 0.8;
+        font-size: 1.625rem;
+        line-height: 2.5rem;
+        padding: 0 0 0.5rem 0;
+    }
+
+    h3, .h3 {
+        font-family: $font_headings;
+        color: $main-text-color;
+        font-weight: 800;
+        opacity: 0.8;
+        font-size: 1.375rem;
+        line-height: 2rem;
+        padding: 0.5rem 0 0.5rem 0;
+    }
+
+    h4, .h4 {
+        font-family: $font_headings;
+        color: $main-text-color;
+        font-weight: 800;
+        opacity: 0.8;
+        font-size: 1.375rem;
+        line-height: 2rem;
+        padding: 0.5rem 0 0.5rem 0;
+    }
+
+    h5, .h5 {
+        font-family: $font_headings;
+        color: $main-text-color;
+        font-weight: 800;
+        opacity: 0.8;
+        font-size: 1.375rem;
+        line-height: 2rem;
+        padding: 0.5rem 0 0.5rem 0;
+    }
+
+    h6, .h6 {
+        font-family: $font_headings;
+        color: $main-text-color;
+        font-weight: 800;
+        opacity: 0.8;
+        font-size: 1rem;
+        line-height: 1.5rem;
+        padding: 0 0 0.25rem 0;
+    }
+
+    .p_lead {
+        font-family: $font_p_lead;
+        color: $main-text-color;
+        opacity: 0.75;
+        font-size: 1.625rem;
+        line-height: 2.625rem;
+        padding: 0 0 0.5rem 0;
+    }
+
+    p, .p {
+        font-family: $font_paragraph;
+        color: $main-text-color;
+        font-weight: 400;
+        opacity: 0.75;
+        font-size: 1.25rem;
+        line-height: 2rem;
+        padding: 0 0 2rem 0;
+    }
+}
