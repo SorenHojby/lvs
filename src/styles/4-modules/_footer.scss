@@ -1,0 +1,14 @@
+footer {
+    background-color: $main-text-color;
+    color: $sec-text-color;
+}
+footer h3, p {
+    color: $sec-text-color;
+}
+.social-media {
+    ul {
+        li {
+            list-style-type: none;
+        }
+    }
+}
