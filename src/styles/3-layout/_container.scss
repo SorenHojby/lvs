@@ -1,0 +1,45 @@
+.container_full {
+    min-width: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: stretch;
+    align-content: stretch;
+}
+
+.container_half_full {
+    min-width: 50%;
+    max-width: 50%;
+    background: yellow;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: stretch;
+    align-content: stretch;
+}
+
+.container_one_third {
+    min-width: 33.33%;
+    max-width: 33.33%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: stretch;
+    align-content: stretch;
+}
+
+.container_two_third {
+    min-width: 66.66%;
+    max-width: 66.66%;
+    background: red;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: stretch;
+    align-content: stretch;
+}
