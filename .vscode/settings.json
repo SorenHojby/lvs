@@ -1,0 +1,16 @@
+"liveSassCompile.settings.formats"😞
+        // This is Default.
+        {
+            "format": "expanded",
+            "extensionName": ".css",
+            "savePath": "~/../../build/styles"
+        },
+        // You can add more
+        {
+            "format": "compressed",
+            "extensionName": ".min.css",
+            "savePath": "~/../../build/styles"
+        },
+
+
+    ]
