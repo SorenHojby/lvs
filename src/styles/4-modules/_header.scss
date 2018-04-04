@@ -1,3 +1,29 @@
 .navbar {
-    height: 90px;
+    min-height: 90px;
+    box-shadow: $sec_box_shadow;
+    .navbar-collapse {
+        background: #fff;
+        padding: 20px;
+        .navbar-nav {
+            .dropdown {
+                .dropdown-menu {
+                    border-radius: 0px;
+                    border: none;
+                    padding: 20px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .navbar-collapse {
+        .navbar-nav {
+            .dropdown {
+                .dropdown-menu {
+                    width: 20vw;
+                }
+            }
+        }
+    }
 }
