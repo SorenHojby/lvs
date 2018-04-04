@@ -6,14 +6,14 @@ body {
     background-color: $main_bg_color;
 }
 
-//Heading underline
+//HEADING UNDERLINE
 .underline {
     display: inline-block;
     position: relative;
     padding-bottom: 5px;
 }
 
-.underline:before{
+.underline:before {
     content: "";
     position: absolute;
     width: 20%;
@@ -22,7 +22,7 @@ body {
     left: 40%;
     border-bottom: 5px solid $main_color_blue_lagoon;
 }
-.underline:after{
+.underline:after {
     content: "";
     position: absolute;
     width: 20%;
@@ -31,6 +31,20 @@ body {
     left: 40%;
     border-bottom: 5px solid $main_color_blue_lagoon;
 }
+
+
+//BUTTONS
+.small_btn {
+    font-size: 20px;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 22px;
+    color: $sec_text_color;
+    background: $main_color_green;
+    background: linear-gradient(to right, $main_color_light_army , $main_color_green);
+}
+
+
 
 // TYPOGRAPHY
 // Small screens max-width 768px

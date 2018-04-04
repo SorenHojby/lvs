@@ -1,0 +1,19 @@
+.blivfrivillig {
+    height: 383px;
+    margin: 50px 0;
+
+    .blivfrivillig_box {
+        background-color: $sec_text_color;
+        box-shadow: $main_box_shadow;
+        padding: 20px;
+        height: 480px;
+
+        .blivfrivillig_box_content {
+            text-align: center;
+
+            p {
+                margin-top: 30px;
+            }
+        }   
+    }
+}
