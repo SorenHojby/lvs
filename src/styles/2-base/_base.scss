@@ -42,7 +42,7 @@ body {
     padding: 10px 22px;
     color: $sec_text_color;
     background: $main_color_green;
-    background: linear-gradient(to right, $main_color_light_army, $main_color_green);
+    background: $greengradient;
 }
 
 // TYPOGRAPHY
