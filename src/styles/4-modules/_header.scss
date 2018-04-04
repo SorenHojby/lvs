@@ -1,6 +1,6 @@
 .navbar {
     min-height: 90px;
-    box-shadow: @sec_box_shadow;
+    box-shadow: $sec_box_shadow;
     .navbar-collapse {
         background: #fff;
         padding: 20px;
