@@ -1,15 +1,51 @@
 .module_hero_section{
-    background-image: url(http://via.placeholder.com/1250x1250);
+    background-image: url(../images/vaeresteder262.png);
     background-size: 50%;
     background-position: right;
     background-repeat: no-repeat;
     padding: 50px 0px;
+    margin-bottom: 100px;
     
 .module_hero_card {
     background-color: $sec_bg_color;
     box-shadow: $main_box_shadow;
     padding: 2rem 4.125rem;
-   
+
+   h2 {
+       text-align: center;
+   } 
+p {
+    margin-top: 2rem;
+  
+}
 }
 
+}
+
+.module_nav_bg  {
+    img {
+        height: auto;
+        width: 100%;
+        margin-top: 250px;
+        object-fit: cover;
+    }
+}
+
+.module_nav_overview {
+    margin-bottom: 100px;
+    h2 {
+        margin: auto;
+    }
+
+.module_nav_card {
+    box-shadow: $main_box_shadow;
+    background-color: $sec_bg_color;
+    padding: 2rem 0;
+    margin-top: 4rem;
+    .wrapper {
+        p {
+            padding: 0px;
+        }
+    }
+}
 }
