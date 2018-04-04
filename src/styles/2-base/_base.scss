@@ -2,6 +2,10 @@ html {
     font-size: 16px;
 }
 
+body {
+    background-color: $main_bg_color;
+}
+
 // TYPOGRAPHY
 // Small screens max-width 768px
 @media screen and (max-width: 768px) {
