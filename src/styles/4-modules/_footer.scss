@@ -1,16 +1,18 @@
 footer {
     background-color: $main_text_color;
-    color: $sec-text-color;
+    color: $sec_text_color;
     padding-top: 4.625rem;
     h3 {
         opacity: 1;
-        color: $sec-text-color;
+        color: $sec_text_color;
+        font-size: 1.1rem;
     }
     p {
-        color: $sec-text-color;
+        color: $sec_text_color;
+        font-size: 1rem;
     }
     a {
-        color: $sec-text-color;
+        color: $sec_text_color;
     }
     ul {
         padding-left: 1.07rem;
