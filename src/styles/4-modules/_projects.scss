@@ -1,4 +1,15 @@
+.module_hero_section{
+    background-image: url(http://via.placeholder.com/1250x1250);
+    background-size: 50%;
+    background-position: right;
+    background-repeat: no-repeat;
+    padding: 50px 0px;
+    
 .module_hero_card {
     background-color: $sec_bg_color;
     box-shadow: $main_box_shadow;
+    padding: 2rem 4.125rem;
+   
+}
+
 }

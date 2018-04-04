@@ -6,6 +6,32 @@ body {
     background-color: $main_bg_color;
 }
 
+//Heading underline
+.underline {
+    display: inline-block;
+    position: relative;
+    padding-bottom: 5px;
+}
+
+.underline:before{
+    content: "";
+    position: absolute;
+    width: 20%;
+    height: 3px;
+    bottom: -20px;
+    left: 40%;
+    border-bottom: 5px solid $main_color_blue_lagoon;
+}
+.underline:after{
+    content: "";
+    position: absolute;
+    width: 20%;
+    height: 3px;
+    bottom:-10px;
+    left: 40%;
+    border-bottom: 5px solid $main_color_blue_lagoon;
+}
+
 // TYPOGRAPHY
 // Small screens max-width 768px
 @media screen and (max-width: 768px) {
@@ -190,3 +216,7 @@ body {
         padding: 0 0 2rem 0;
     }
 }
+
+
+
+
