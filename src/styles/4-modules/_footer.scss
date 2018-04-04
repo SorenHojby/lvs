@@ -1,14 +1,43 @@
 footer {
-    background-color: $main-text-color;
+    background-color: $main_text_color;
     color: $sec-text-color;
 }
-footer h3, p {
-    color: $sec-text-color;
+footer h3, p, a {
+    color: $sec_text_color;
+}
+footer h3 {
+    opacity: 1;
+}
+footer ul {
+    padding-left: 15px;
+}
+footer {
+    ul {
+        li {
+            a {
+                font-family: $font_paragraph;
+                opacity: 0.75;
+                line-height: 3rem;
+            }
+        }
+    }
+}
+.social-media ul {
+    padding-left: 0;
 }
 .social-media {
     ul {
         li {
             list-style-type: none;
+        }
+    }
+}
+.social-media {
+    ul {
+        li {
+            i {
+                width: 46px;
+            }
         }
     }
 }
