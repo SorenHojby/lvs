@@ -1,7 +1,7 @@
 footer {
     background-color: $main_text_color;
     color: $sec_text_color;
-    padding-top: 4.625rem;
+    padding-top: 74px;
     h3 {
         opacity: 1;
         color: $sec_text_color;
@@ -10,14 +10,14 @@ footer {
     p {
         color: $sec_text_color;
         font-size: 1rem;
-        padding-bottom: 3rem;
+        padding-bottom: 69px;
     }
     a {
         color: $sec_text_color;
     }
     ul {
-        padding-left: 1.07rem;
-        padding-bottom: 3rem;
+        padding-left: 16px;
+        padding-bottom: 69px;
         li {
             font-family: $font_paragraph;
             opacity: 0.75;
@@ -30,7 +30,7 @@ footer {
             li {
                 list-style-type: none;
                 i {
-                    width: 2.875rem;
+                    width: 46px;
                 }
             }
         }
@@ -40,7 +40,7 @@ footer {
             text-align: center;
             font-size: 1rem;
             opacity: 0.3;
-            padding: 3rem 0 1.3rem 0; 
+            padding: 69px 0 21px 0; 
         }
     }
 }
