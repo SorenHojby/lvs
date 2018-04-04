@@ -7,6 +7,7 @@ footer h3, p, a {
 }
 footer h3 {
     opacity: 1;
+    padding-top: 4.625rem;
 }
 footer ul {
     padding-left: 15px;
@@ -14,11 +15,9 @@ footer ul {
 footer {
     ul {
         li {
-            a {
-                font-family: $font_paragraph;
-                opacity: 0.75;
-                line-height: 3rem;
-            }
+            font-family: $font_paragraph;
+            opacity: 0.75;
+            line-height: 3rem;
         }
     }
 }
@@ -36,8 +35,14 @@ footer {
     ul {
         li {
             i {
-                width: 46px;
+                width: 2.875rem;
             }
         }
     }
+}
+.copy-line p {
+    text-align: center;
+    font-size: 1rem;
+    opacity: 0.3;
+    padding: 0; 
 }
