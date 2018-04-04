@@ -1,48 +1,42 @@
 footer {
     background-color: $main_text_color;
     color: $sec-text-color;
-}
-footer h3, p, a {
-    color: $sec_text_color;
-}
-footer h3 {
-    opacity: 1;
     padding-top: 4.625rem;
-}
-footer ul {
-    padding-left: 15px;
-}
-footer {
+    h3 {
+        opacity: 1;
+        color: $sec-text-color;
+    }
+    p {
+        color: $sec-text-color;
+    }
+    a {
+        color: $sec-text-color;
+    }
     ul {
+        padding-left: 1.07rem;
         li {
             font-family: $font_paragraph;
             opacity: 0.75;
             line-height: 3rem;
         }
     }
-}
-.social-media ul {
-    padding-left: 0;
-}
-.social-media {
-    ul {
-        li {
-            list-style-type: none;
-        }
-    }
-}
-.social-media {
-    ul {
-        li {
-            i {
-                width: 2.875rem;
+    .social-media {
+        ul {
+            padding-left: 0;
+            li {
+                list-style-type: none;
+                i {
+                    width: 2.875rem;
+                }
             }
         }
     }
-}
-.copy-line p {
-    text-align: center;
-    font-size: 1rem;
-    opacity: 0.3;
-    padding: 0; 
+    .copy-line {
+        p {
+            text-align: center;
+            font-size: 1rem;
+            opacity: 0.3;
+            padding: 0; 
+        }
+    }
 }
