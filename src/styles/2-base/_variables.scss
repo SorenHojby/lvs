@@ -3,31 +3,54 @@
     font-family: CooperHewitt;
     src: url("../fonts/CooperHewitt-Book.otf");
 }
+
 // FONTS
-$font_headings: 'Open Sans', sans-serif;
+$font_headings: 'Open Sans',
+sans-serif;
 $font_p_lead: CooperHewitt;
-$font_paragraph: 'PT Sans', sans-serif;
-
-
+$font_paragraph: 'PT Sans',
+sans-serif;
 // COLORS
 //Main collors
-$main_color_blue: rgb(52, 122, 160);
-$main_color_blue_lagoon: rgb(1, 128, 144);
-$main_color_green: rgb(3, 195, 153);
-$main_color_light_army: rgb(178, 220, 191);
-
+$main_color_blue: rgb(52,
+122,
+160);
+$main_color_blue_lagoon: rgb(1,
+128,
+144);
+$main_color_green: rgb(3,
+195,
+153);
+$main_color_light_army: rgb(178,
+220,
+191);
 //CTA colors
-$cta_color_yellow: rgb(237, 255, 189);
-$cta_color_red: rgb(255, 23, 83);
-
+$cta_color_yellow: rgb(237,
+255,
+189);
+$cta_color_red: rgb(255,
+23,
+83);
 //Text colors
-$main_text_color: rgb(56, 64, 71);
-$sec_text_color: rgb(255, 255, 255);
-
+$main_text_color: rgb(56,
+64,
+71);
+$sec_text_color: rgb(255,
+255,
+255);
 //Background colors
-$main_bg_color: rgb(253, 253, 253);
-$sec_bg_color: rgb(255, 255, 255);
-
-//Box Shadows 
-$main_box_shadow: 0px 0px 70px rgba(0,0,0,0.15);
-$sec_box_shadow: 0px 0px 30px rgba(0,0,0,0.15);
+$main_bg_color: rgb(253,
+253,
+253);
+$sec_bg_color: rgb(255,
+255,
+255);
+//Box Shadows
+$main_box_shadow: 0px 0px 70px rgba(0,
+0,
+0,
+0.15);
+$sec_box_shadow: 0px 0px 30px rgba(0,
+0,
+0,
+0.15);
