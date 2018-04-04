@@ -6,6 +6,46 @@ body {
     background-color: $main_bg_color;
 }
 
+//HEADING UNDERLINE
+.underline {
+    display: inline-block;
+    position: relative;
+    padding-bottom: 5px;
+}
+
+.underline:before {
+    content: "";
+    position: absolute;
+    width: 20%;
+    height: 3px;
+    bottom: -20px;
+    left: 40%;
+    border-bottom: 5px solid $main_color_blue_lagoon;
+}
+.underline:after {
+    content: "";
+    position: absolute;
+    width: 20%;
+    height: 3px;
+    bottom:-10px;
+    left: 40%;
+    border-bottom: 5px solid $main_color_blue_lagoon;
+}
+
+
+//BUTTONS
+.small_btn {
+    font-size: 20px;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 22px;
+    color: $sec_text_color;
+    background: $main_color_green;
+    background: linear-gradient(to right, $main_color_light_army , $main_color_green);
+}
+
+
+
 // TYPOGRAPHY
 // Small screens max-width 768px
 @media screen and (max-width: 768px) {
@@ -190,3 +230,7 @@ body {
         padding: 0 0 2rem 0;
     }
 }
+
+
+
+
