@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans|PT+Sans');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:800|PT+Sans');
 @font-face {
     font-family: CooperHewitt;
     src: url("../fonts/CooperHewitt-Book.otf");
@@ -27,3 +27,7 @@ $sec_text_color: rgb(255, 255, 255);
 //Background colors
 $main_bg_color: rgb(253, 253, 253);
 $sec_bg_color: rgb(255, 255, 255);
+
+//Box Shadows 
+$main_box_shadow: 0px 0px 70px rgba(0,0,0,0.15);
+$sec_box_shadow: 0px 0px 30px rgba(0,0,0,0.15);
