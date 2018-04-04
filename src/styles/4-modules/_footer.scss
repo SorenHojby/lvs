@@ -1,9 +1,28 @@
 footer {
-    background-color: $main-text-color;
+    background-color: $main_text_color;
     color: $sec-text-color;
 }
-footer h3, p {
-    color: $sec-text-color;
+footer h3, p, a {
+    color: $sec_text_color;
+}
+footer h3 {
+    opacity: 1;
+    padding-top: 4.625rem;
+}
+footer ul {
+    padding-left: 15px;
+}
+footer {
+    ul {
+        li {
+            font-family: $font_paragraph;
+            opacity: 0.75;
+            line-height: 3rem;
+        }
+    }
+}
+.social-media ul {
+    padding-left: 0;
 }
 .social-media {
     ul {
@@ -11,4 +30,19 @@ footer h3, p {
             list-style-type: none;
         }
     }
+}
+.social-media {
+    ul {
+        li {
+            i {
+                width: 2.875rem;
+            }
+        }
+    }
+}
+.copy-line p {
+    text-align: center;
+    font-size: 1rem;
+    opacity: 0.3;
+    padding: 0; 
 }
