@@ -11,7 +11,7 @@ body {
 @media screen and (max-width: 768px) {
     .font_size_mega {
         font-family: $font_headings;
-        color: $main-text-color;
+        color: $main_text_color;
         font-weight: 800;
         opacity: 0.8;
         font-size: 2rem;
@@ -21,7 +21,7 @@ body {
     
     h1, .h1 {
         font-family: $font_headings;
-        color: $main-text-color;
+        color: $main_text_color;
         font-weight: 800;
         opacity: 0.8;
         font-size: 1.875rem;
@@ -31,7 +31,7 @@ body {
 
     h2, .h2 {
         font-family: $font_headings;
-        color: $main-text-color;
+        color: $main_text_color;
         font-weight: 800;
         opacity: 0.8;
         font-size: 1.25rem;
@@ -41,7 +41,7 @@ body {
 
     h3, .h3 {
         font-family: $font_headings;
-        color: $main-text-color;
+        color: $main_text_color;
         font-weight: 800;
         opacity: 0.8;
         font-size: 1.125rem;
@@ -51,7 +51,7 @@ body {
 
     h4, .h4 {
         font-family: $font_headings;
-        color: $main-text-color;
+        color: $main_text_color;
         font-weight: 800;
         opacity: 0.8;
         font-size: 1.125rem;
@@ -61,7 +61,7 @@ body {
 
     h5, .h5 {
         font-family: $font_headings;
-        color: $main-text-color;
+        color: $main_text_color;
         font-weight: 800;
         opacity: 0.8;
         font-size: 1.125rem;
@@ -71,7 +71,7 @@ body {
 
     h6, .h6 {
         font-family: $font_headings;
-        color: $main-text-color;
+        color: $main_text_color;
         font-weight: 800;
         opacity: 0.8;
         font-size: 0.8125rem;
@@ -81,7 +81,7 @@ body {
 
     .p_lead {
         font-family: $font_p_lead;
-        color: $main-text-color;
+        color: $main_text_color;
         opacity: 0.75;
         font-size: 1.25rem;
         line-height: 2.125rem;
@@ -90,7 +90,7 @@ body {
 
     p, .p {
         font-family: $font_paragraph;
-        color: $main-text-color;
+        color: $main_text_color;
         font-weight: 400;
         opacity: 0.75;
         font-size: 1rem;
@@ -103,7 +103,7 @@ body {
 @media screen and (min-width: 768px) {
     .font_size_mega {
         font-family: $font_headings;
-        color: $main-text-color;
+        color: $main_text_color;
         font-weight: 800;
         opacity: 0.8;
         font-size: 3.75rem;
@@ -113,7 +113,7 @@ body {
     
     h1, .h1 {
         font-family: $font_headings;
-        color: $main-text-color;
+        color: $main_text_color;
         font-weight: 800;
         opacity: 0.8;
         font-size: 2.875rem;
@@ -123,7 +123,7 @@ body {
 
     h2, .h2 {
         font-family: $font_headings;
-        color: $main-text-color;
+        color: $main_text_color;
         font-weight: 800;
         opacity: 0.8;
         font-size: 1.625rem;
@@ -133,7 +133,7 @@ body {
 
     h3, .h3 {
         font-family: $font_headings;
-        color: $main-text-color;
+        color: $main_text_color;
         font-weight: 800;
         opacity: 0.8;
         font-size: 1.375rem;
@@ -143,7 +143,7 @@ body {
 
     h4, .h4 {
         font-family: $font_headings;
-        color: $main-text-color;
+        color: $main_text_color;
         font-weight: 800;
         opacity: 0.8;
         font-size: 1.375rem;
@@ -153,7 +153,7 @@ body {
 
     h5, .h5 {
         font-family: $font_headings;
-        color: $main-text-color;
+        color: $main_text_color;
         font-weight: 800;
         opacity: 0.8;
         font-size: 1.375rem;
@@ -163,7 +163,7 @@ body {
 
     h6, .h6 {
         font-family: $font_headings;
-        color: $main-text-color;
+        color: $main_text_color;
         font-weight: 800;
         opacity: 0.8;
         font-size: 1rem;
@@ -173,7 +173,7 @@ body {
 
     .p_lead {
         font-family: $font_p_lead;
-        color: $main-text-color;
+        color: $main_text_color;
         opacity: 0.75;
         font-size: 1.625rem;
         line-height: 2.625rem;
@@ -182,7 +182,7 @@ body {
 
     p, .p {
         font-family: $font_paragraph;
-        color: $main-text-color;
+        color: $main_text_color;
         font-weight: 400;
         opacity: 0.75;
         font-size: 1.25rem;
