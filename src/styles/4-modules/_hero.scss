@@ -1,0 +1,14 @@
+.frontpage_hero {
+    background-size: 100%;
+    background-position: center;
+    height: 600px;
+
+    .frontpage_hero_txt {
+        text-align: center;
+        
+        h1, p {
+            color: $sec_text_color;
+            opacity: 1;
+        }
+    }
+}
