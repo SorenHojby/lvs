@@ -1,37 +1,30 @@
 .about_mission_vision {
     margin-bottom: 100px;
-    
     .mission_vision_h1 {
         display: flex;
         justify-content: center;
         margin-bottom: 200px;
     }
-
     .mv_background {
         height: 550px;
         background-size: 100%;
         background-position: center;
-
         .mission_vision_txt {
             background-color: $sec_bg_color;
             box-shadow: $main_box_shadow;
             padding: 75px;
             top: -150px;
             position: relative;
-
             .col-md-6 {
                 padding: 0 30px;
             }
-            
-            .mv_border_r{
+            .mv_border_r {
                 border-right: 5px solid rgba(56, 64, 71, 0.1);
             }
-
             p {
                 margin: 0;
                 padding: 0;
             }
-
             .mission_vision_blue {
                 color: $main_color_blue_lagoon;
                 margin: 0;
@@ -43,7 +36,6 @@
 
 .about_facts_section {
     margin-bottom: 100px;
-
     .facts_h1 {
         display: flex;
         justify-content: center;
@@ -55,15 +47,12 @@
         .mission_vision_h1 {
             margin-bottom: 50px;
         }
-
         .mv_background {
             height: auto;
             background-image: none !important;
-    
             .mission_vision_txt {
                 top: 0;
-                
-                .mv_border_r{
+                .mv_border_r {
                     border-right: none;
                     border-bottom: 5px solid rgba(56, 64, 71, 0.1);
                     padding-bottom: 30px;
@@ -80,16 +69,14 @@
             text-align: center;
         }
     }
-
     .about_mission_vision {
         .mission_vision_h1 {
             text-align: center;
         }
-
         .mv_background {
             .mission_vision_txt {
                 padding: 35px;
             }
-        }          
+        }
     }
 }
