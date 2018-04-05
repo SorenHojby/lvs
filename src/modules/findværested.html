@@ -18,51 +18,169 @@
                 <div class="col-12 col-md-8 offset-md-2">
                     <h1 class="underline text-uppercase">Find værested</h1>
                     <p>Et samfund med mod til mangfoldighed og reelle muligheder for den enkelte til et bedre liv. LVS er en landsforening i bevægelse.</p>
-                    <div class="row search_box">
-                        <div class="search_icon"><i data-feather="search"></i></div><input type="text" class="h2" id="myInput" onkeyup="myFunction()" placeholder="5000">
+                </div>
+                <div class="container-fluid search_box">
+                    <div class="row">
+                        <div class="col-2 col-sm-1 search_icon"><i data-feather="search"></i></div><input type="text" class="col-9 offset-1 col-sm-10 offset-sm-1 h2" id="myInput" onkeyup="myFunction()" placeholder="5000">
                     </div>
                 </div>
             </div>
-            <ul class="row justify-content-around" id="myUL">
-                <li class="col-6 col-md-4 findværested_box"><a href="#">
-                    <div>
-                        <p>Værestedet Øst</p>
-                        <p>Egeparken 158 B<br />
-                        5240 Odense NØ</p>
-                    </div>
-                </a></li>
-                <li class="col-6 col-md-4 findværested_box"><a href="#">
-                    <div>
-                        <p>Værestedet Nordfyn</p>
-                        <p>Bryggerivej 31<br />
-                        5450 Otterup</p>
-                    </div>
-                </a></li>
-                <li class="col-6 col-md-4 findværested_box"><a href="#">
-                    <div>
-                        <p>Værestedet Øst</p>
-                        <p>Egeparken 158 B<br />
-                        5240 Odense NØ</p>
-                    </div>
-                </a></li>
-            </ul>
-        </div>
-    </section>
-
-    <section class="blivfrivillig d-flex align-items-center" style="background-image: url(../../build/images/people.png)">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-5 offset-md-1 col-10 offset-1 d-flex align-items-center justify-content-center blivfrivillig_box">
-                    <div class="blivfrivillig_box_content">
-                        <h1 class="underline">Bliv frivillig</h1>
-
-                        <p class="p_lead">Søg og bliv frivillig på en af vores mange væresteder</p>
-
-                        <button class="btn small_btn">
-                            Bliv frivillig
-                        </button>
-                    </div>
-                </div>
+            <div class="container shelters">
+                <ul class="row" id="myUL">
+                    <li class="col-6 col-md-4"><a href="#">
+                        <div class="row findværested_box">
+                            <div class="col-12 findværested_box_content">
+                                <div class="row d-flex align-items-center">
+                                    <p class="col-12">Værestedet Nordfyn</p>
+                                    <p class="col-12">Bryggerivej 31<br />
+                                    5450 Otterup</p>
+                                </div>
+                            </div>
+                            <div class="col-12 contact_info_shelter">
+                                <div class="row">
+                                    <p class="col-6 map_shelter"><a href="#"><i data-feather="navigation"></i><span>Route</span></a></p>
+                                    <p class="col-6 vl"><a href="#"><i data-feather="phone"></i><span>64 82 86 76</span></a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </a></li>
+                    <li class="col-6 col-md-4"><a href="#">
+                        <div class="row findværested_box">
+                            <div class="col-12 findværested_box_content">
+                                <div class="row d-flex align-items-center">
+                                    <p class="col-12">Værestedet Øst</p>
+                                    <p class="col-12">Egeparken 158 B<br />
+                                    5240 Odense NØ</p>
+                                </div>
+                            </div>
+                            <div class="col-12 contact_info_shelter">
+                                <div class="row">
+                                    <p class="col-6 map_shelter"><a href="#"><i data-feather="navigation"></i><span>Route</span></a></p>
+                                    <p class="col-6 vl"><a href="#"><i data-feather="phone"></i><span>63 75 56 70</span></a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </a></li>
+                    <li class="col-6 col-md-4"><a href="#">
+                        <div class="row findværested_box">
+                            <div class="col-12 findværested_box_content">
+                                <div class="row d-flex align-items-center">
+                                    <p class="col-12">Café Mælkevejen</p>
+                                    <p class="col-12">Højstrupvej 59<br />
+                                    5200 Odense V</p>
+                                </div>
+                            </div>
+                            <div class="col-12 contact_info_shelter">
+                                <div class="row">
+                                    <p class="col-6 map_shelter"><a href="#"><i data-feather="navigation"></i><span>Route</span></a></p>
+                                    <p class="col-6 vl"><a href="#"><i data-feather="phone"></i><span>63 75 56 80</span></a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </a></li>
+                    <li class="col-6 col-md-4"><a href="#">
+                        <div class="row findværested_box">
+                            <div class="col-12 findværested_box_content">
+                                <div class="row d-flex align-items-center">
+                                    <p class="col-12">Værestedet Solstrålen</p>
+                                    <p class="col-12">Jyllandsgade 10 C<br />
+                                    7000 Fredericia</p>
+                                </div>
+                            </div>
+                            <div class="col-12 contact_info_shelter">
+                                <div class="row">
+                                    <p class="col-6 map_shelter"><a href="#"><i data-feather="navigation"></i><span>Route</span></a></p>
+                                    <p class="col-6 vl"><a href="#"><i data-feather="phone"></i><span>75 91 15 33</span></a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </a></li>
+                    <li class="col-6 col-md-4"><a href="#">
+                        <div class="row findværested_box">
+                            <div class="col-12 findværested_box_content">
+                                <div class="row d-flex align-items-center">
+                                    <p class="col-12">Vejle Herberg</p>
+                                    <p class="col-12">Havnegade 12a<br />
+                                    7100 Vejle</p>
+                                </div>
+                            </div>
+                            <div class="col-12 contact_info_shelter">
+                                <div class="row">
+                                    <p class="col-6 map_shelter"><a href="#"><i data-feather="navigation"></i><span>Route</span></a></p>
+                                    <p class="col-6 vl"><a href="#"><i data-feather="phone"></i><span>41 61 28 39</span></a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </a></li>
+                    <li class="col-6 col-md-4"><a href="#">
+                        <div class="row findværested_box">
+                            <div class="col-12 findværested_box_content">
+                                <div class="row d-flex align-items-center">
+                                    <p class="col-12">Café Backstage</p>
+                                    <p class="col-12">Bakkenborgvej 2 A<br />
+                                    4230 Skælskør</p>
+                                </div>
+                            </div>
+                            <div class="col-12 contact_info_shelter">
+                                <div class="row">
+                                    <p class="col-6 map_shelter"><a href="#"><i data-feather="navigation"></i><span>Route</span></a></p>
+                                    <p class="col-6 vl"><a href="#"><i data-feather="phone"></i><span>40 27 62 67</span></a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </a></li>
+                    <li class="col-6 col-md-4"><a href="#">
+                        <div class="row findværested_box">
+                            <div class="col-12 findværested_box_content">
+                                <div class="row d-flex align-items-center">
+                                    <p class="col-12">Huset Horseager</p>
+                                    <p class="col-12">Horseager 15 B<br />
+                                    4330 Hvalsø</p>
+                                </div>
+                            </div>
+                            <div class="col-12 contact_info_shelter">
+                                <div class="row">
+                                    <p class="col-6 map_shelter"><a href="#"><i data-feather="navigation"></i><span>Route</span></a></p>
+                                    <p class="col-6 vl"><a href="#"><i data-feather="phone"></i><span>46 46 47 31</span></a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </a></li>
+                    <li class="col-6 col-md-4"><a href="#">
+                        <div class="row findværested_box">
+                            <div class="col-12 findværested_box_content">
+                                <div class="row d-flex align-items-center">
+                                    <p class="col-12">Værestedet i HKI</p>
+                                    <p class="col-12">Glentevej 67<br />
+                                    2400 København NV</p>
+                                </div>
+                            </div>
+                            <div class="col-12 contact_info_shelter">
+                                <div class="row">
+                                    <p class="col-6 map_shelter"><a href="#"><i data-feather="navigation"></i><span>Route</span></a></p>
+                                    <p class="col-6 vl"><a href="#"><i data-feather="phone"></i><span>39 16 21 30</span></a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </a></li>
+                    <li class="col-6 col-md-4"><a href="#">
+                        <div class="row findværested_box">
+                            <div class="col-12 findværested_box_content">
+                                <div class="row d-flex align-items-center">
+                                    <p class="col-12">Skiftesporet</p>
+                                    <p class="col-12">Lille Værløsevej 36 A<br />
+                                    3500 Værløse</p>
+                                </div>
+                            </div>
+                            <div class="col-12 contact_info_shelter">
+                                <div class="row">
+                                    <p class="col-6 map_shelter"><a href="#"><i data-feather="navigation"></i><span>Route</span></a></p>
+                                    <p class="col-6 vl"><a href="#"><i data-feather="phone"></i><span>72 16 42 32</span></a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </a></li>
+                </ul>
             </div>
         </div>
     </section>
