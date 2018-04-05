@@ -4,13 +4,13 @@ header {
         min-height: 90px;
         .navbar-collapse {
             background: #fff;
-            padding: 20px;
+            padding: 20px; // maybe rewrite to 1.125rem or something
             .navbar-nav {
                 .dropdown {
                     .dropdown-menu {
                         border-radius: 0px;
                         border: none;
-                        padding: 20px;
+                        padding: 20px; // maybe rewrite to 1.125rem or something
                     }
                 }
             }
