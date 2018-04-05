@@ -4,6 +4,7 @@ html {
 
 body {
     background-color: $main_bg_color;
+    font-family: $font_paragraph;
 }
 
 //HEADING UNDERLINE
@@ -22,16 +23,16 @@ body {
     left: 40%;
     border-bottom: 5px solid $main_color_blue_lagoon;
 }
+
 .underline:after {
     content: "";
     position: absolute;
     width: 20%;
     height: 3px;
-    bottom:-10px;
+    bottom: -10px;
     left: 40%;
     border-bottom: 5px solid $main_color_blue_lagoon;
 }
-
 
 //BUTTONS
 .small_btn {
@@ -41,10 +42,8 @@ body {
     padding: 10px 22px;
     color: $sec_text_color;
     background: $main_color_green;
-    background: linear-gradient(to right, $main_color_light_army , $main_color_green);
+    background: $greengradient;
 }
-
-
 
 // TYPOGRAPHY
 // Small screens max-width 768px
@@ -58,8 +57,8 @@ body {
         line-height: 3.125rem;
         padding: 1rem 0 1rem 0;
     }
-    
-    h1, .h1 {
+    h1,
+    .h1 {
         font-family: $font_headings;
         color: $main_text_color;
         font-weight: 800;
@@ -68,8 +67,8 @@ body {
         line-height: 2.625rem;
         padding: 0 0 1rem 0;
     }
-
-    h2, .h2 {
+    h2,
+    .h2 {
         font-family: $font_headings;
         color: $main_text_color;
         font-weight: 800;
@@ -78,8 +77,8 @@ body {
         line-height: 1.938rem;
         padding: 0 0 0.25rem 0;
     }
-
-    h3, .h3 {
+    h3,
+    .h3 {
         font-family: $font_headings;
         color: $main_text_color;
         font-weight: 800;
@@ -88,8 +87,8 @@ body {
         line-height: 1.938rem;
         padding: 0.25rem 0 0.25rem 0;
     }
-
-    h4, .h4 {
+    h4,
+    .h4 {
         font-family: $font_headings;
         color: $main_text_color;
         font-weight: 800;
@@ -98,8 +97,8 @@ body {
         line-height: 1.938rem;
         padding: 0.25rem 0 0.25rem 0;
     }
-
-    h5, .h5 {
+    h5,
+    .h5 {
         font-family: $font_headings;
         color: $main_text_color;
         font-weight: 800;
@@ -108,8 +107,8 @@ body {
         line-height: 1.938rem;
         padding: 0.25rem 0 0.25rem 0;
     }
-
-    h6, .h6 {
+    h6,
+    .h6 {
         font-family: $font_headings;
         color: $main_text_color;
         font-weight: 800;
@@ -118,7 +117,6 @@ body {
         line-height: 1.25rem;
         padding: 0.5rem 0 0.25rem 0;
     }
-
     .p_lead {
         font-family: $font_p_lead;
         color: $main_text_color;
@@ -127,8 +125,8 @@ body {
         line-height: 2.125rem;
         padding: 0 0 0.25rem 0;
     }
-
-    p, .p {
+    p,
+    .p {
         font-family: $font_paragraph;
         color: $main_text_color;
         font-weight: 400;
@@ -150,8 +148,8 @@ body {
         line-height: 5.188rem;
         padding: 2rem 0 2rem 0;
     }
-    
-    h1, .h1 {
+    h1,
+    .h1 {
         font-family: $font_headings;
         color: $main_text_color;
         font-weight: 800;
@@ -160,8 +158,8 @@ body {
         line-height: 4rem;
         padding: 0 0 2rem 0;
     }
-
-    h2, .h2 {
+    h2,
+    .h2 {
         font-family: $font_headings;
         color: $main_text_color;
         font-weight: 800;
@@ -170,8 +168,8 @@ body {
         line-height: 2.5rem;
         padding: 0 0 0.5rem 0;
     }
-
-    h3, .h3 {
+    h3,
+    .h3 {
         font-family: $font_headings;
         color: $main_text_color;
         font-weight: 800;
@@ -180,8 +178,8 @@ body {
         line-height: 2rem;
         padding: 0.5rem 0 0.5rem 0;
     }
-
-    h4, .h4 {
+    h4,
+    .h4 {
         font-family: $font_headings;
         color: $main_text_color;
         font-weight: 800;
@@ -190,8 +188,8 @@ body {
         line-height: 2rem;
         padding: 0.5rem 0 0.5rem 0;
     }
-
-    h5, .h5 {
+    h5,
+    .h5 {
         font-family: $font_headings;
         color: $main_text_color;
         font-weight: 800;
@@ -200,8 +198,8 @@ body {
         line-height: 2rem;
         padding: 0.5rem 0 0.5rem 0;
     }
-
-    h6, .h6 {
+    h6,
+    .h6 {
         font-family: $font_headings;
         color: $main_text_color;
         font-weight: 800;
@@ -210,7 +208,6 @@ body {
         line-height: 1.5rem;
         padding: 0 0 0.25rem 0;
     }
-
     .p_lead {
         font-family: $font_p_lead;
         color: $main_text_color;
@@ -219,8 +216,8 @@ body {
         line-height: 2.625rem;
         padding: 0 0 0.5rem 0;
     }
-
-    p, .p {
+    p,
+    .p {
         font-family: $font_paragraph;
         color: $main_text_color;
         font-weight: 400;
@@ -230,7 +227,3 @@ body {
         padding: 0 0 2rem 0;
     }
 }
-
-
-
-
