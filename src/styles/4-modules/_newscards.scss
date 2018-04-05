@@ -1,12 +1,18 @@
 .module_news_card_overview {
+    .searchbar {
+        margin-top: 35px;
+        span {
+            margin-left: 15px;
+        }
+    }
     .underline {
-        margin: auto;
+        margin: auto auto 100px auto;
     }
     .module_news_card {
         background-color: $sec_bg_color;
         box-shadow: $main_box_shadow;
         padding: 0px;
-        margin: 100px 0px;
+        margin: 22px 0px;
         .thumbnail {
             img {
                 width: 100%;
