@@ -18,22 +18,34 @@
                 <div class="col-12 col-md-8 offset-md-2">
                     <h1 class="underline text-uppercase">Find værested</h1>
                     <p>Et samfund med mod til mangfoldighed og reelle muligheder for den enkelte til et bedre liv. LVS er en landsforening i bevægelse.</p>
-                    <i class="fas fa-search"></i><input type="text" id="myInput" onkeyup="myFunction()" placeholder="5000">
+                    <div class="row search_box">
+                        <div class="search_icon"><i data-feather="search"></i></div><input type="text" class="h2" id="myInput" onkeyup="myFunction()" placeholder="5000">
+                    </div>
                 </div>
             </div>
-            <div class="row" id="myUL">
-                <div class="col-6 col-md-4 findværested_box">
-                    <p>Værestedet Øst</p>
-                    <p>Egeparken 158 B<br />
-                    5240 Odense NØ</p>
-                </div>
-                <div class="col-6 col-md-4 findværested_box">
-
-                </div>
-                <div class="col-6 col-md-4 findværested_box">
-
-                </div>
-            </div>
+            <ul class="row justify-content-around" id="myUL">
+                <li class="col-6 col-md-4 findværested_box"><a href="#">
+                    <div>
+                        <p>Værestedet Øst</p>
+                        <p>Egeparken 158 B<br />
+                        5240 Odense NØ</p>
+                    </div>
+                </a></li>
+                <li class="col-6 col-md-4 findværested_box"><a href="#">
+                    <div>
+                        <p>Værestedet Nordfyn</p>
+                        <p>Bryggerivej 31<br />
+                        5450 Otterup</p>
+                    </div>
+                </a></li>
+                <li class="col-6 col-md-4 findværested_box"><a href="#">
+                    <div>
+                        <p>Værestedet Øst</p>
+                        <p>Egeparken 158 B<br />
+                        5240 Odense NØ</p>
+                    </div>
+                </a></li>
+            </ul>
         </div>
     </section>
 
@@ -111,6 +123,30 @@
             </section>
         </div>
     </footer>
+    <script src="../../build/vendor/feather/feather.min.js"></script>
+    <script>
+        feather.replace();
+    </script>
+    <script> //for search box
+        function myFunction() {
+            // Declare variables
+            var input, filter, ul, li, a, i;
+            input = document.getElementById('myInput');
+            filter = input.value.toUpperCase();
+            ul = document.getElementById("myUL");
+            li = ul.getElementsByTagName('li');
+
+            // Loop through all list items, and hide those who don't match the search query
+            for (i = 0; i < li.length; i++) {
+                a = li[i].getElementsByTagName("a")[0];
+                if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+                    li[i].style.display = "";
+                } else {
+                    li[i].style.display = "none";
+                }
+            }
+        }
+    </script>
 </body>
 
 </html>

@@ -6,4 +6,35 @@
     p {
         margin-top: 30px;
     }
+    .search_box {
+        background-color: $sec_bg_color;
+        box-shadow: $main_box_shadow;
+        max-width: 570px;
+        margin-bottom: 81px;
+        .search_icon {
+            width: 81px;
+            margin: auto 0;
+        }
+        input {
+            border: none;
+            height: 82px;
+            padding: 0;
+            margin: 0;
+            opacity: 1;
+        }
+    }
+    ul {
+        list-style-type: none;
+    }
+    .findværested_box {
+        background-color: $sec_bg_color;
+        box-shadow: $sec_box_shadow;
+        max-width: 32%;
+        p {
+            text-align: left;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
 }
