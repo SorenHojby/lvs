@@ -1,8 +1,31 @@
 .module_calender {
+    svg {
+        opacity: 0.75;
+    }
+
+    .module_calener_heading  {
+        h2 {
+           
+            padding-bottom: 0px;
+            line-height: initial;
+        }
+
+    }
+    .module_calender_controll {
+        margin-bottom: 2rem;
+    }
+    .module_calender_filtering {
+        p {
+            padding: 0px;
+            margin: 0px;
+            line-height: initial;
+        }
+    }
     .module_calender_wrapper {
         background-color: $sec_bg_color;
         box-shadow: $main_box_shadow;
         padding-left: 0px;
+        margin-bottom: 2rem;
         p {
             padding: 0px;
             margin: 0px;
@@ -19,9 +42,6 @@
                     font-size: 2.625rem;
                     opacity: 1;
                 }
-            }
-            svg {
-                opacity: 0.75;
             }
             .module_calender_img {
                 img {
@@ -40,12 +60,25 @@
             }
         }
     }
-
     .module_calender_event_heading {
         padding-bottom: 1rem;
     }
-
     .module_calender_time {
         padding-right: 1rem;
+    }
+    .module_calender_filter,
+    .module_calender_search {
+        p {
+            margin-left: 1rem;
+        }
+    }
+    .module_calender_filter {
+        margin-left: 2rem;
+    }
+    .module_calender_search {
+        margin-left: -15px;
+    }
+    .module_calender_view {
+        margin-right: -15px;
     }
 }
