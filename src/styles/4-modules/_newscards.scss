@@ -1,7 +1,14 @@
+.module_news_card_overview {
+
+    .underline {
+        margin: auto;
+    }
+
 .module_news_card {
     background-color: $sec_bg_color;
     box-shadow: $main_box_shadow;
     padding: 0px;
+    margin: 100px 0px;
     .thumbnail {
         img {
             width: 100%;
@@ -47,4 +54,12 @@
             height: 25px;
         }
     }
+
+    .cta {
+        a {
+            color: $main_color_blue_lagoon;
+        }
+    }
+}
+
 }
