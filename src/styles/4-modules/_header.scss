@@ -4,13 +4,68 @@ header {
         min-height: 90px;
         .navbar-collapse {
             background: #fff;
-            padding: 20px;
+            padding: 20px; // maybe rewrite to 1.125rem or something
             .navbar-nav {
                 .dropdown {
                     .dropdown-menu {
+                        background: ghostwhite;
+                        margin-top: 30px;
+                        box-shadow: inset 0px 30px 40px -30px rgba(0, 0, 0, 0.15);
                         border-radius: 0px;
                         border: none;
-                        padding: 20px;
+                        padding: 20px; // maybe rewrite to 1.125rem or something
+                        ul {
+                            list-style-type: none;
+                            li {
+                                strong {
+                                    color: #384047;
+                                }
+                                span {
+                                    float: right;
+                                    a {
+                                        color: #384047;
+                                    }
+                                }
+                            }
+                        }
+                        div {
+                            padding: 25px 40px 25px 40px;
+                            color: white;
+                            background-size: cover;
+                            background-position: center;
+                            background-repeat: no-repeat;
+                            .clockdate {
+                                display: block;
+                                text-align: left;
+                                font-weight: 900;
+                                font-size: 20px;
+                                text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.5);
+                                i {
+                                    text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.5);
+                                    font-size: 20px;
+                                    color: #fff;
+                                }
+                                span {
+                                    text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.5);
+                                    font-size: 20px;
+                                    position: relative;
+                                    top: -5px;
+                                    left: 20px;
+                                    font-weight: 900;
+                                }
+                            }
+                            span {
+                                text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.5);
+                                font-size: 20px;
+                                a {
+                                    margin-top: 10px;
+                                    display: block;
+                                    text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.5);
+                                    font-size: 20px;
+                                    color: #EDFFBD;
+                                }
+                            }
+                        }
                     }
                 }
             }
