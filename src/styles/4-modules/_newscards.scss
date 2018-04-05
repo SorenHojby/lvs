@@ -64,3 +64,45 @@
         }
     }
 }
+
+.module_news_card_single {
+    .breadcrumbs {
+        margin-top: 35px;
+        .bc {
+            .backtextlink {
+                margin: 10px;
+                position: relative;
+                top: -5px;
+            }
+        }
+    }
+    .news_content {
+        h1 {
+            font-size: 2rem;
+        }
+        .shadowline {
+            position: absolute;
+            background: transparent;
+            height: 500px;
+            top: 0px;
+            left: 0px;
+            width: 100%;
+            box-shadow: 0px 0px 70px rgba(0, 0, 0, 0.2);
+        }
+        .imagebox {
+            top: -150px;
+            position: relative;
+            background-image: url('../../build/images/news_big_img_1.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 500px;
+            width: 100vw;
+        }
+        .text_content {
+            position: relative;
+            top: -100px;
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+    }
+}
