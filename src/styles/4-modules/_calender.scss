@@ -1,4 +1,7 @@
 .module_calender {
+    svg {
+        opacity: 0.75;
+    }
     .module_calender_wrapper {
         background-color: $sec_bg_color;
         box-shadow: $main_box_shadow;
@@ -20,9 +23,7 @@
                     opacity: 1;
                 }
             }
-            svg {
-                opacity: 0.75;
-            }
+         
             .module_calender_img {
                 img {
                     height: 150px;
