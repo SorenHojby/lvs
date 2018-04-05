@@ -1,0 +1,45 @@
+.module_countdown {
+    background-size: 100vw;
+    height: 455px;
+
+    .module_countdown_card {
+        background-color: $sec_bg_color;
+        box-shadow: $main_box_shadow;
+    }
+
+.module_countdown_eventtitle {
+    padding-left: 1rem;
+}
+.module_countdown_eventinfo {
+    padding-bottom: 100px;
+    p {
+        padding-bottom: 0px;
+        margin-bottom: 0px;
+        line-height: initial;
+    }
+    .module_countdown_date {
+        p:first-child {
+            border-bottom: 1px solid $main_text_color;
+            text-align: center;
+        }
+    }
+}
+
+.module_countdown_coundowntimer {
+    padding: 2rem 0rem;
+}
+
+.btn_fullwidth {
+    width: 100%;
+    background: $greengradient;
+    color: $sec_bg_color;
+    padding: 1rem 0rem;
+    border-radius: 0px;
+    border: transparent;
+}
+.btn_play {
+    border-radius: 200px;
+    color: $
+}
+
+}

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../../build/vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../build/vendor/fontawesome/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="../../build/styles/main.css">
+    <title></title>
+</head>
+
+<body>
+
+
+
+    <section class="container module_countdown" style="background-image: url(../../build/images/2014_08_08_LVS_Sommerfest_Fredag-556.png)">
+        <div class="row">
+            <div class="col-lg-1 offset-lg-2 d-flex align-items-center">
+                <button class="btn btn_play">
+                        <i data-feather="play"> </i>
+                </button>
+            </div>
+
+            <div class="col-lg-6 offset-lg-2">
+                <div class="module_countdown_card  d-flex flex-column align-items-center">
+                    <h2 class="h1 underline">IDVI EVENTS</h2>
+                    <div class="module_countdown_coundowntimer">
+                        <p id="countdown" class="h1"></p>
+
+                    </div>
+                    <div class="module_countdown_eventinfo d-flex">
+                        <div class="module_countdown_date">
+                            <p>
+                                5
+                            </p>
+
+                            <p>Maj</p>
+                        </div>
+                        <div class="module_countdown_eventtitle">
+                            <p>DM indendørs fodbold</p>
+                            <div class="d-flex">
+                                <div class="d-flex module_countdown_time">
+                                    <i data-feather="clock"></i>
+                                    <p>14.00</p>
+                                </div>
+                                <div class="d-flex module_countdown_place">
+                                    <i data-feather="map-pin"></i>
+                                    <p>Odense C</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <button class="btn btn_fullwidth">
+                        Læs mere
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <script src="../../build/vendor/feather/feather.min.js"></script>
+    <script>
+        feather.replace();
+    </script>
+    <script src="../../build/vendor/jquery/jquery-3.3.1.min.js"></script>
+    <script src="../../build/vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <script>
+        // Set the date we're counting down to
+        var countDownDate = new Date("May 5, 2018 15:37:25").getTime();
+
+        // Update the count down every 1 second
+        var x = setInterval(function () {
+
+            // Get todays date and time
+            var now = new Date().getTime();
+
+            // Find the distance between now an the count down date
+            var distance = countDownDate - now;
+
+            // Time calculations for days, hours, minutes and seconds
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            // Output the result in an element with id="demo"
+            document.getElementById("countdown").innerHTML = days + "  " + hours + " " +
+                minutes + "  " + seconds + "  ";
+
+            // If the count down is over, write some text 
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("countdown").innerHTML = "EXPIRED";
+            }
+        }, 1000);
+    </script>
+</body>
