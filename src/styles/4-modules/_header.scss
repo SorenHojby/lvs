@@ -1,4 +1,6 @@
 header {
+    position: relative;
+    z-index: 100;
     box-shadow: $sec_box_shadow;
     .navbar {
         min-height: 90px;
