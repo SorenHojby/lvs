@@ -36,9 +36,23 @@
 
 .about_facts_section {
     margin-bottom: 100px;
+    
     .facts_h1 {
         display: flex;
         justify-content: center;
+    }
+
+    .frontpage_hero_facts {
+        background-color: $sec_bg_color;
+        box-shadow: $main_box_shadow;
+        padding: 25px;
+        text-align: center;
+        color: $main_text_color;
+        p {
+            padding: 0;
+            margin: 0;
+            opacity: 1;
+        }
     }
 }
 
@@ -58,6 +72,16 @@
                     padding-bottom: 30px;
                     margin-bottom: 30px;
                 }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .about_facts_section {
+        .about_facts {
+            .margin-25-bottom {
+                margin-bottom: 25px;
             }
         }
     }
