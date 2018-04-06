@@ -1,0 +1,64 @@
+.single_event {
+
+.single_event_cta_info {
+ 
+    svg {
+        opacity: 0.8;
+    }
+  
+}
+
+
+    .single_event_thumbnail {
+        
+    
+    }
+    .single_event_thumbnail {
+        div {
+            background-image: url(build/images/2014_08_08_LVS_Sommerfest_Fredag-556.png);
+            height: 450px;
+            object-fit: contain;
+            background-size: 100%;
+            background-repeat: no-repeat;
+        }
+    }
+
+    .single_event_wrapper {
+        border-width: 1px 0px 2px 0px;
+        border-style: solid;
+        border-color:  rgba(56,
+        64,
+        71, 0.10);
+       
+    }
+
+    .single_event_halfwidth {
+        color: $sec_bg_color;
+        border: none;
+        height: 100%;
+        background: $greengradient;
+        padding: 1.5rem 6rem;
+    }
+    .single_event_wrapper {
+        p {
+            padding: 0px;
+            margin: 0px;
+            line-height: initial;
+        }
+    }
+
+    .single_event_cta_info {
+        p {
+            padding-left: 0.5rem;
+            padding-right: 1rem;
+            }
+    }
+
+    .single_event_sharing {
+        i {
+            margin: 0 1rem;
+            color: $main_text_color;
+            opacity: 0.8;
+        }
+    }
+}
