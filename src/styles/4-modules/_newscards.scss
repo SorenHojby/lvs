@@ -82,14 +82,17 @@
         }
         .shadowline {
             position: absolute;
-            background: transparent;
-            height: 500px;
-            top: 0px;
+            background: white;
+            height: 200px;
+            top: 200px;
             left: 0px;
             width: 100%;
             box-shadow: 0px 0px 70px rgba(0, 0, 0, 0.2);
+            z-index: 10;
         }
         .imagebox {
+            position: relative;
+            z-index: 100;
             top: -150px;
             position: relative;
             background-image: url('../../build/images/news_big_img_1.jpg');
