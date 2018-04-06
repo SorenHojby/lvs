@@ -4,6 +4,9 @@
     background-size: cover;
     text-align: center;
     margin-bottom: 195px;
+    a:hover {
+        text-decoration: none;
+    }
     p {
         margin-top: 30px;
     }
@@ -26,6 +29,9 @@
             margin: 0;
             opacity: 1;
         }
+        input:focus {
+            outline: none;
+        }
     }
     .shelters {
         ul {
@@ -33,38 +39,43 @@
             padding: 0;
             li {
                 padding: 0;
-                .findværested_box {
-                    background-color: $sec_bg_color;
-                    box-shadow: $sec_box_shadow;
-                    margin: 10px;
-                    .findværested_box_content {
-                        p:first-child {
-                            margin-bottom: 0;
-                        }
-                        p:last-child {
-                            margin: 0;
-                        }
-                    }
-                    .contact_info_shelter {
-                        background-color: #FCFCFC;
-                        padding: 3px 23px;
-                        button {
-                            color: $main_text_color;
-                            background-color: transparent;
-                            height: 30px;
-                            width: 100%;
-                            border: none;
-                            svg:not(:root) {
-                                margin-right: 14px;
-                                color: $main_color_blue_lagoon;
+                a {
+                    .findværested_box {
+                        background-color: $sec_bg_color;
+                        box-shadow: $sec_box_shadow;
+                        margin: 10px;
+                        .findværested_box_content {
+                            p:first-child {
+                                margin-bottom: 0;
+                            }
+                            p:last-child {
+                                margin: 0;
                             }
                         }
-                        button:first-child {
-                            text-align: left;
-                        }
-                        button:last-child {
-                            text-align: right;
-                            border-left: 2px solid #CDCECE;
+                        .contact_info_shelter {
+                            background-color: #FCFCFC;
+                            padding: 3px 23px;
+                            button {
+                                color: $main_text_color;
+                                background-color: transparent;
+                                height: 30px;
+                                width: 100%;
+                                border: none;
+                                svg:not(:root) {
+                                    margin-right: 14px;
+                                    color: $main_color_blue_lagoon;
+                                }
+                            }
+                            button:first-child {
+                                text-align: left;
+                            }
+                            button:last-child {
+                                text-align: right;
+                                border-left: 2px solid #CDCECE;
+                            }
+                            button:hover {
+                                color: $main_color_blue_lagoon;
+                            }
                         }
                     }
                 }
