@@ -31,25 +31,6 @@
             </div>
         </div>
     </section>
-    <h2>Opret dig</h2>
-    <p>Click on the "x" symbol to close the alert message.</p>
-    <div class="alert">
-        <span class="closebtn">&times;</span>
-    </div>
-
-    <script>
-    function myFunction(){
-        var close = document.getElementsByClassName("closebtn");
-        var i;
-        for (i = 0; i < close.length; i++) {
-            close[i].onclick = function(){
-                var div = this.parentElement;
-                div.style.opacity = "0";
-                setTimeout(function(){ div.style.display = "none"; }, 600);
-            }
-        }
-    }
-    </script>
 
     <footer>
         <div class="container">
