@@ -39,6 +39,24 @@ body {
     background-color: #fff;
 }
 
+.breadcrumbs {
+    margin-top: 35px;
+    .bc {
+        a {
+            text-decoration: none;
+            color: $main_text_color;
+            .backtextlink {
+                margin: 10px;
+                position: relative;
+                top: -5px;
+            }
+        }
+    }
+}
+
+// Gradient background
+.bggradient {}
+
 //BUTTONS
 .small_btn {
     font-size: 20px;
