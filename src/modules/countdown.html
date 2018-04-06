@@ -15,71 +15,72 @@
 
 
 
-    <section class="container module_countdown" style="background-image: url(../../build/images/2014_08_08_LVS_Sommerfest_Fredag-556.png)">
-        <div class="row">
-            <div id="myModal" class="modal">
-
-                <!-- Modal content -->
-                <div class="modal-content">
-                  <span class="close">&times;</span>
-                  <iframe width="100%" height="100%" src="https://www.youtube.com/embed/GfHbIJFCHxY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                </div>
-              
-              </div>
-        </div>
-
-        <div class="row">
-            <div class="col-lg-1 offset-lg-2 d-flex align-items-center">
-                <button id="moduel_countdown_btn" class="btn_play">
-                        <img src="../../build/images/icons/play_icon.svg" alt="">
-                </button>
+        <section class="container module_countdown d-flex align-items-center" style="background-image: url(../../build/images/2014_08_08_LVS_Sommerfest_Fredag-556.png)">
+            <div class="container">
+            <div class="row">
+                <div id="myModal" class="modal">
+    
+                    <div class="modal-content">
+                      <span class="close">&times;</span>
+                      <iframe width="100%" height="100%" src="https://www.youtube.com/embed/GfHbIJFCHxY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                    </div>
+                  
+                  </div>
             </div>
-
-            <div class="col-lg-5 offset-lg-3">
-                <div class="module_countdown_card  d-flex flex-column align-items-center">
-                    <h2 class="h1 underline">IDVI EVENTS</h2>
-                    <div class="module_countdown_coundowntimer">
-                            <div class="d-flex module_countdown_time">
-                                <p>Dage</p>
-                                <p>Timer</p>
-                                <p>Minuter</p>
-                                <p>Sekunder</p>
-                            </div>
-                        <div id="countdown" class="d-flex"></div>
-
-                    </div>
-                    <div class="module_countdown_eventinfo d-flex">
-                        <div class="module_countdown_date">
-                            <p>
-                                5
-                            </p>
-
-                            <p>Maj</p>
-                        </div>
-                        <div class="module_countdown_eventtitle">
-                            <p>DM indendørs fodbold</p>
-                            <div class="d-flex">
-                                <div class="d-flex module_countdown_time">
-                                    <i data-feather="clock"></i>
-                                    <p>14.00</p>
-                                </div>
-                                <div class="d-flex module_countdown_place">
-                                    <i data-feather="map-pin"></i>
-                                    <p>Odense C</p>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                    <button class="btn btn_fullwidth">
-                        Læs mere
+    
+            <div class="row">
+                <div class="col-lg-1 offset-lg-2 d-flex align-items-center">
+                    <button id="moduel_countdown_btn" class="btn_play">
+                            <img src="../../build/images/icons/play_icon.svg" alt="">
                     </button>
                 </div>
-
+    
+                <div class="col-lg-5 offset-lg-3">
+                    <div class="module_countdown_card  d-flex flex-column align-items-center">
+                        <h2 class="h1 underline">IDVI EVENTS</h2>
+                        <div class="module_countdown_coundowntimer">
+                                <div class="d-flex module_countdown_timer_text">
+                                    <p>Dage</p>
+                                    <p>Timer</p>
+                                    <p>Minutter</p>
+                                    <p>Sekunder</p>
+                                </div>
+                            <div id="countdown" class="d-flex justify-content-center"></div>
+    
+                        </div>
+                        <div class="module_countdown_eventinfo d-flex">
+                            <div class="module_countdown_date">
+                                <p>
+                                    5
+                                </p>
+    
+                                <p>Maj</p>
+                            </div>
+                            <div class="module_countdown_eventtitle">
+                                <p>DM indendørs fodbold</p>
+                                <div class="d-flex">
+                                    <div class="d-flex module_countdown_time">
+                                        <i data-feather="clock"></i>
+                                        <p>14.00</p>
+                                    </div>
+                                    <div class="d-flex module_countdown_place">
+                                        <i data-feather="map-pin"></i>
+                                        <p>Odense C</p>
+                                    </div>
+                                </div>
+                            </div>
+    
+                        </div>
+                        <button onclick="location.href='http://127.0.0.1:5500/single-event.html'" class="btn btn_fullwidth">
+                            Læs mere
+                        </button>
+                    </div>
+                </div>
+    
+                </div>
             </div>
-        </div>
-    </section>
-
+        </section>
+    
 
 
     <script src="../../build/vendor/feather/feather.min.js"></script>
