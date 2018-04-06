@@ -42,16 +42,27 @@
         justify-content: center;
     }
 
-    .frontpage_hero_facts {
+    .about_facts {
         background-color: $sec_bg_color;
         box-shadow: $main_box_shadow;
         padding: 25px;
         text-align: center;
         color: $main_text_color;
+        margin-top: 50px;
+        margin-bottom: 50px;
+
         p {
             padding: 0;
             margin: 0;
             opacity: 1;
+        }
+    }
+
+    .about_facts_img {
+        img {
+            width: 100%;
+            height: 600px;
+            object-fit: cover;
         }
     }
 }
@@ -83,6 +94,10 @@
             .margin-25-bottom {
                 margin-bottom: 25px;
             }
+        }
+
+        .about_facts_img {
+            display: none;
         }
     }
 }
