@@ -1,0 +1,138 @@
+.findværested {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    margin-bottom: 195px;
+    p {
+        margin-top: 30px;
+    }
+    .search_box {
+        background-color: $sec_bg_color;
+        box-shadow: $main_box_shadow;
+        max-width: 570px;
+        margin: 0 auto 81px auto;
+        .search_icon {
+            height: 24px;
+            margin: auto;
+            svg:not(:root) {
+                color: #C6C6C6;
+            }
+        }
+        input {
+            border: none;
+            height: 82px;
+            padding: 0;
+            margin: 0;
+            opacity: 1;
+        }
+    }
+    .shelters {
+        ul {
+            list-style-type: none;
+            padding: 0;
+            li {
+                padding: 0;
+                .findværested_box {
+                    background-color: $sec_bg_color;
+                    box-shadow: $sec_box_shadow;
+                    margin: 10px;
+                    .findværested_box_content {
+                        p:first-child {
+                            margin-bottom: 0;
+                        }
+                        p:last-child {
+                            margin: 0;
+                        }
+                    }
+                    .contact_info_shelter {
+                        background-color: #FCFCFC;
+                        padding: 3px 23px;
+                        button {
+                            color: $main_text_color;
+                            background-color: transparent;
+                            height: 30px;
+                            width: 100%;
+                            border: none;
+                            svg:not(:root) {
+                                margin-right: 14px;
+                                color: $main_color_blue_lagoon;
+                            }
+                        }
+                        button:first-child {
+                            text-align: left;
+                        }
+                        button:last-child {
+                            text-align: right;
+                            border-left: 2px solid #CDCECE;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .contact_info_shelter {
+        button {
+            font-size: 1rem;
+            svg:not(:root) {
+                width: 1rem;
+                height: auto;
+            }
+        }
+    }
+}
+@media screen and (max-width: 1199px) {
+    .findværested_box {
+        p {
+            font-size: 0.9rem;
+        }
+        .contact_info_shelter {
+            button {
+                font-size: 0.7rem;
+                padding: 0;
+                svg:not(:root) {
+                    width: 0.7rem;
+                    height: auto;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 520px) {
+    .findværested_box {
+        p {
+            font-size: 0.7rem;
+        }
+        .contact_info_shelter {
+            button {
+                span {
+                    display: none;
+                }
+                svg:not(:root) {
+                    width: 1rem;
+                    height: auto;
+                    padding-top: 8px;
+                    margin-left: 14px;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 366px) {
+    .findværested_box {
+        p {
+            font-size: 0.5rem;
+        }
+        .contact_info_shelter {
+            button {
+                svg:not(:root) {
+                    width: 0.8rem;
+                    height: auto;
+                }
+            }
+        }
+    }
+}

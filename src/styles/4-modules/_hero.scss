@@ -3,16 +3,14 @@
     background-position: center;
     height: 600px;
     margin-bottom: 100px;
-
     .frontpage_hero_txt {
         text-align: center;
-        
-        h1, p {
+        h1,
+        p {
             color: $sec_text_color;
             opacity: 1;
         }
     }
-
     .frontpage_hero_facts {
         background-color: $sec_bg_color;
         box-shadow: $main_box_shadow;
@@ -20,7 +18,6 @@
         text-align: center;
         color: $main_text_color;
         top: 186px;
-
         p {
             padding: 0;
             margin: 0;
@@ -32,7 +29,6 @@
 @media screen and (max-width: 992px) {
     .frontpage_hero {
         height: 450px;
-    
         .frontpage_hero_facts {
             top: 113px;
         }
@@ -44,14 +40,11 @@
         height: 350px;
         margin-bottom: 150px;
         background-size: 150%;
-
         .frontpage_hero_txt {
             margin-top: 75px;
         }
-    
         .frontpage_hero_facts {
             top: 80px;
-
             .margin-25-bottom {
                 margin-bottom: 25px;
             }
@@ -63,7 +56,6 @@
     .frontpage_hero {
         height: 350px;
         margin-bottom: 50px;
-    
         .frontpage_hero_facts {
             top: 0;
         }
