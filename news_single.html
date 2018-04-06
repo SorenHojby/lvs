@@ -8,11 +8,13 @@
     <link rel="stylesheet" href="build/vendor/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="build/vendor/fontawesome/css/fontawesome-all.min.css">
     <link rel="stylesheet" href="build/styles/main.css">
+
     <title></title>
 </head>
 
 <body>
     <div data-includeHTML="src/modules/header.html"></div>
+
     <section class="container module_news_card_single ">
         <div class="row breadcrumbs">
             <div class="col-12 bc">
@@ -147,13 +149,9 @@
             </picture>
         </section>
     </section>
+
     <div data-includeHTML="src/modules/footer.html"></div>
-    <script src="build/vendor/feather/feather.min.js"></script>
-    <script>
-        feather.replace();
-    </script>
     <script src="build/vendor/jquery/jquery-3.3.1.min.js"></script>
-    <script src="build/vendor/bootstrap/js/bootstrap.min.js"></script>
     <script>
         $("div[data-includeHTML]").each(function() {
             $(this).load($(this).attr("data-includeHTML"));
