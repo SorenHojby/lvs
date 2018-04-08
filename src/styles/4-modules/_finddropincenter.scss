@@ -76,6 +76,9 @@
                             button:hover {
                                 color: $main_color_blue_lagoon;
                             }
+                            button:focus {
+                                outline: 0;
+                            }
                         }
                     }
                 }
