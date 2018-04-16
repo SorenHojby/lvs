@@ -1,5 +1,110 @@
-.sign_popup {
-    background-color: $sec_bg_color;
-    box-shadow: $main_box_shadow;
-    max-width: 570px;
+body {
+    background-color: #384047;
+    opacity: 38.44%;
+}
+
+/*progressbar*/
+#progressbar {
+	margin: 44px auto;
+	counter-reset: step;
+}
+#progressbar li {
+	list-style-type: none;
+    color: $sec_bg_color;
+    width: 25%;
+	float: left;
+	position: relative;
+}
+#progressbar li:before {
+	content: counter(step);
+	counter-increment: step;
+	width: 37px;
+	line-height: 37px;
+	display: block;
+	color: $main_text_color;
+	background: $sec_bg_color;
+	border-radius: 50px;
+	margin: auto;
+}
+/*progressbar connectors*/
+#progressbar li:after {
+	content: '';
+	width: 100%;
+	height: 5px;
+	background: $sec_bg_color;
+	position: absolute;
+    left: -50%;
+    top: 16px;
+	z-index: -1;
+}
+#progressbar li:first-child:after {
+	/*connector before the first step removed*/
+	content: none; 
+}
+/*marking active/completed steps green*/
+/*The number of the step and the connector before it = green*/
+#progressbar li.active:before,  #progressbar li.active:after{
+	background: $main_color_blue;
+	color: $sec_text_color;
+}
+
+/*form styles*/
+#msform {
+	max-width: 770px;
+	margin: auto;
+	text-align: center;
+	position: relative;
+}
+#msform fieldset {
+	background: $sec_bg_color;
+	border: 0 none;
+	padding: 91px 100px;
+	margin: 0 auto;
+	
+	/*stacking fieldsets above each other*/
+	position: relative;
+}
+/*Hide all except first fieldset*/
+#msform fieldset:not(:first-of-type) {
+	display: none;
+}
+/*inputs*/
+#msform input, #msform textarea {
+	padding: 15px;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	margin-bottom: 10px;
+	width: 100%;
+	box-sizing: border-box;
+	font-family: montserrat;
+	color: #2C3E50;
+	font-size: 13px;
+}
+/*buttons*/
+#msform .action-button {
+	width: 100px;
+	background: #27AE60;
+	font-weight: bold;
+	color: white;
+	border: 0 none;
+	border-radius: 1px;
+	cursor: pointer;
+	padding: 10px 5px;
+	margin: 10px 5px;
+}
+#msform .action-button:hover, #msform .action-button:focus {
+	box-shadow: 0 0 0 2px white, 0 0 0 3px #27AE60;
+}
+/*headings*/
+.fs-title {
+	font-size: 15px;
+	text-transform: uppercase;
+	color: #2C3E50;
+	margin-bottom: 10px;
+}
+.fs-subtitle {
+	font-weight: normal;
+	font-size: 13px;
+	color: #666;
+	margin-bottom: 20px;
 }
