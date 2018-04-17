@@ -58,9 +58,8 @@ body {
 #msform fieldset {
 	background: $sec_bg_color;
 	border: 0 none;
-	padding: 91px 100px;
+	padding: 90px 90px 10px;
 	margin: 0 auto;
-	
 	/*stacking fieldsets above each other*/
 	position: relative;
 }
@@ -68,43 +67,31 @@ body {
 #msform fieldset:not(:first-of-type) {
 	display: none;
 }
+
 /*inputs*/
 #msform input, #msform textarea {
 	padding: 15px;
-	border: 1px solid #ccc;
-	border-radius: 3px;
+	border: 1px solid #E3E3E3;
 	margin-bottom: 10px;
 	width: 100%;
 	box-sizing: border-box;
-	font-family: montserrat;
-	color: #2C3E50;
-	font-size: 13px;
 }
 /*buttons*/
 #msform .action-button {
-	width: 100px;
-	background: #27AE60;
-	font-weight: bold;
-	color: white;
-	border: 0 none;
-	border-radius: 1px;
+	width: 32px;
+	height: 32px;
+	background: $sec_bg_color;
+	color: $main_color_blue_lagoon;
+	border: 2px solid $main_color_blue_lagoon;
+	border-radius: 50px;
 	cursor: pointer;
-	padding: 10px 5px;
-	margin: 10px 5px;
+	padding: 0px;
+	margin: 35px 16px;
 }
 #msform .action-button:hover, #msform .action-button:focus {
 	box-shadow: 0 0 0 2px white, 0 0 0 3px #27AE60;
 }
-/*headings*/
+
 .fs-title {
-	font-size: 15px;
-	text-transform: uppercase;
-	color: #2C3E50;
-	margin-bottom: 10px;
-}
-.fs-subtitle {
-	font-weight: normal;
-	font-size: 13px;
-	color: #666;
-	margin-bottom: 20px;
+	padding: 1.2rem;
 }
