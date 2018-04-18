@@ -31,7 +31,7 @@
                         <fieldset class="col-12">
                             <h2 class="fs-title">Opret dig som frivillig</h2>
                             <input type="text" name="postnummer" placeholder="Indtast dit postnummer" />
-                            <input type="button" name="previous" class="previous action-button" value="<" />
+                            <input type="button" name="previous" class="previous action-button" value="<" disabled />
                             <input type="button" name="next" class="next action-button" value=">" />
                         </fieldset>
                         <fieldset class="col-12">
@@ -51,16 +51,42 @@
                             <input type="button" name="next" class="next action-button" value=">" />
                         </fieldset>
                         <fieldset class="col-12">
-                            <input type="text" name="fname" placeholder="First Name" />
-                            <input type="text" name="lname" placeholder="Last Name" />
-                            <input type="text" name="phone" placeholder="Phone" />
+                            <div class="row">
+                                <div class="col-4">
+                                    <label>
+                                        <figure>
+                                            <div><i class="far fa-calendar"></i></div>
+                                            <figcaption>Events</figcaption>
+                                        </figure>
+                                        <input type="checkbox" name="image" value="events" checked = "checked"/>
+                                    </label>
+                                </div>
+                                <div class="col-4">
+                                    <label>
+                                        <figure>
+                                            <div><i class="far fa-calendar"></i></div>
+                                            <figcaption>Genbrugsbutiken</figcaption>
+                                        </figure>
+                                        <input type="checkbox" name="image" value="genbrugsbutiken"/>
+                                    </label>
+                                </div>
+                                <div class="col-4">
+                                    <label>
+                                        <figure>
+                                            <div><i class="fas fa-child"></i></div>
+                                            <figcaption>Sport</figcaption>
+                                        </figure>
+                                        <input type="checkbox" name="image" value="sport"/>
+                                    </label>
+                                </div>
+                            </div>
                             <input type="button" name="previous" class="previous action-button" value="<" />
                             <input type="submit" name="submit" class="submit action-button" value=">" />
                         </fieldset>
                         <fieldset class="col-12">
                             <h1 class="fs-title-white">Tak for din hjælp</h1>
                             <input type="text" name="fname" placeholder="First Name" />
-                            <input type="button" name="close" class="close action-button" value="x" />
+                            <input type="button" name="previous" class="previous action-button" value="<" />
                         </fieldset>
                     </div>
                 </section>
