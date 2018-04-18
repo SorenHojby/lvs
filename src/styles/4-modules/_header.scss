@@ -11,7 +11,7 @@ header {
                 .dropdown {
                     .dropdown-menu {
                         background: ghostwhite;
-                        margin-top: 30px;
+                        margin-top: 28px;
                         box-shadow: inset 0px 30px 40px -30px rgba(0, 0, 0, 0.15);
                         border-radius: 0px;
                         border: none;
@@ -67,6 +67,16 @@ header {
                                     font-size: 20px;
                                     color: #EDFFBD;
                                 }
+                            }
+                        }
+                        .facebookbutton {
+                            background: #3B5998;
+                            color: white;
+                            display: block;
+                            padding: 10px;
+                            text-decoration: none;
+                            span {
+                                margin-left: 20px;
                             }
                         }
                     }
