@@ -1,95 +1,3 @@
-/*progressbar*/
-#progressbar {
-	margin: 44px auto;
-	counter-reset: step;
-}
-#progressbar li {
-	list-style-type: none;
-    color: $sec_bg_color;
-    width: 25%;
-	float: left;
-	position: relative;
-}
-#progressbar li:before {
-	content: counter(step);
-	counter-increment: step;
-	width: 37px;
-	line-height: 37px;
-	display: block;
-	color: $main_text_color;
-	background: $sec_bg_color;
-	border-radius: 50px;
-	margin: auto;
-}
-/*progressbar line*/
-#progressbar li:after {
-	content: '';
-	width: 100%;
-	height: 5px;
-	background: $sec_bg_color;
-	position: absolute;
-    left: -50%;
-    top: 16px;
-	z-index: -1;
-}
-#progressbar li:first-child:after {
-	/*line before the first step removed*/
-	content: none; 
-}
-#progressbar li.active:before,  #progressbar li.active:after{
-	background: $main_color_blue;
-	color: $sec_text_color;
-}
-
-/*form styles*/
-#msform {
-	max-width: 770px;
-	margin: auto;
-	text-align: center;
-	position: relative;
-}
-#msform fieldset {
-	background: $sec_bg_color;
-	border: 0 none;
-	padding: 90px 90px 10px;
-	margin: 0 auto;
-	/*stacking fieldsets above each other*/
-	position: relative;
-}
-/*Hide all except first fieldset*/
-#msform fieldset:not(:first-of-type) {
-	display: none;
-}
-
-/*inputs*/
-#msform input, #msform textarea {
-	padding: 15px;
-	border: 1px solid #E3E3E3;
-	margin-bottom: 10px;
-	width: 100%;
-	box-sizing: border-box;
-}
-/*buttons*/
-#msform .action-button {
-	width: 32px;
-	height: 32px;
-	background: $sec_bg_color;
-	color: $main_color_blue_lagoon;
-	border: 2px solid $main_color_blue_lagoon;
-	border-radius: 50px;
-	cursor: pointer;
-	padding: 0px;
-	margin: 35px 16px;
-}
-/*titles*/
-.fs-title {
-	padding: 1.2rem;
-}
-.fs-title-white {
-	font-size: 3rem;
-	color: $sec_text_color;
-}
-
 //overlay
 #overlay {
     position: fixed;
@@ -101,5 +9,117 @@
     right: 0;
 	bottom: 0;
 	background-color: rgba($color: #384047, $alpha: 0.38);
-    z-index: 200;
+	z-index: 200;
+	/*form styles*/
+
+	#msform {
+		max-width: 770px;
+		margin: auto;
+		text-align: center;
+		position: relative;
+
+		fieldset {
+			background: $sec_bg_color;
+			border: 0 none;
+			padding: 90px 90px 10px;
+			margin: 0 auto;
+			/*stacking fieldsets above each other*/
+			position: relative;
+			
+			label {
+				width: 187px;
+				height: 187px;
+
+				figure {
+					i {
+						.fa-calendar::before {
+						font-size: 4.5rem;
+						}
+					}
+				}
+			}
+			input[type=checkbox] {
+				display: none;
+			} 
+		}
+
+		/*Hide all except first fieldset*/
+		fieldset:not(:first-of-type) {
+			display: none;
+		}
+
+		/*inputs*/
+		input, textarea {
+			padding: 15px;
+			border: 1px solid #E3E3E3;
+			margin-bottom: 10px;
+			width: 100%;
+			box-sizing: border-box;
+		}
+
+		/*buttons*/
+		.action-button {
+			width: 32px;
+			height: 32px;
+			background: $sec_bg_color;
+			color: $main_color_blue_lagoon;
+			border: 2px solid $main_color_blue_lagoon;
+			border-radius: 50px;
+			cursor: pointer;
+			padding: 0px;
+			margin: 35px 16px;
+		}
+
+		/*progressbar*/
+		#progressbar {
+			margin: 44px auto;
+			counter-reset: step;
+			li {
+				list-style-type: none;
+				color: $sec_bg_color;
+				width: 25%;
+				float: left;
+				position: relative;
+			}
+			li:before {
+				content: counter(step);
+				counter-increment: step;
+				width: 37px;
+				line-height: 37px;
+				display: block;
+				color: $main_text_color;
+				background: $sec_bg_color;
+				border-radius: 50px;
+				margin: auto;
+			}
+			/*progressbar line*/
+			li:after {
+				content: '';
+				width: 100%;
+				height: 5px;
+				background: $sec_bg_color;
+				position: absolute;
+				left: -50%;
+				top: 16px;
+				z-index: -1;
+			}
+			li:first-child:after {
+				/*line before the first step removed*/
+				content: none; 
+			}
+			li.active:before,  li.active:after{
+				background: $main_color_blue;
+				color: $sec_text_color;
+			}
+		}
+
+		/*titles*/
+		.fs-title {
+			padding: 1.2rem;
+		}
+		.fs-title-white {
+			font-size: 3rem;
+			color: $sec_text_color;
+		}
+	}
 }
