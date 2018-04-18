@@ -1,8 +1,3 @@
-body {
-    background-color: #384047;
-    opacity: 38.44%;
-}
-
 /*progressbar*/
 #progressbar {
 	margin: 44px auto;
@@ -26,7 +21,7 @@ body {
 	border-radius: 50px;
 	margin: auto;
 }
-/*progressbar connectors*/
+/*progressbar line*/
 #progressbar li:after {
 	content: '';
 	width: 100%;
@@ -38,11 +33,9 @@ body {
 	z-index: -1;
 }
 #progressbar li:first-child:after {
-	/*connector before the first step removed*/
+	/*line before the first step removed*/
 	content: none; 
 }
-/*marking active/completed steps green*/
-/*The number of the step and the connector before it = green*/
 #progressbar li.active:before,  #progressbar li.active:after{
 	background: $main_color_blue;
 	color: $sec_text_color;
@@ -58,9 +51,8 @@ body {
 #msform fieldset {
 	background: $sec_bg_color;
 	border: 0 none;
-	padding: 91px 100px;
+	padding: 90px 90px 10px;
 	margin: 0 auto;
-	
 	/*stacking fieldsets above each other*/
 	position: relative;
 }
@@ -68,43 +60,46 @@ body {
 #msform fieldset:not(:first-of-type) {
 	display: none;
 }
+
 /*inputs*/
 #msform input, #msform textarea {
 	padding: 15px;
-	border: 1px solid #ccc;
-	border-radius: 3px;
+	border: 1px solid #E3E3E3;
 	margin-bottom: 10px;
 	width: 100%;
 	box-sizing: border-box;
-	font-family: montserrat;
-	color: #2C3E50;
-	font-size: 13px;
 }
 /*buttons*/
 #msform .action-button {
-	width: 100px;
-	background: #27AE60;
-	font-weight: bold;
-	color: white;
-	border: 0 none;
-	border-radius: 1px;
+	width: 32px;
+	height: 32px;
+	background: $sec_bg_color;
+	color: $main_color_blue_lagoon;
+	border: 2px solid $main_color_blue_lagoon;
+	border-radius: 50px;
 	cursor: pointer;
-	padding: 10px 5px;
-	margin: 10px 5px;
+	padding: 0px;
+	margin: 35px 16px;
 }
-#msform .action-button:hover, #msform .action-button:focus {
-	box-shadow: 0 0 0 2px white, 0 0 0 3px #27AE60;
-}
-/*headings*/
+/*titles*/
 .fs-title {
-	font-size: 15px;
-	text-transform: uppercase;
-	color: #2C3E50;
-	margin-bottom: 10px;
+	padding: 1.2rem;
 }
-.fs-subtitle {
-	font-weight: normal;
-	font-size: 13px;
-	color: #666;
-	margin-bottom: 20px;
+.fs-title-white {
+	font-size: 3rem;
+	color: $sec_text_color;
+}
+
+//overlay
+#overlay {
+    position: fixed;
+    display: none;
+    widows: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+	bottom: 0;
+	background-color: rgba($color: #384047, $alpha: 0.38);
+    z-index: 200;
 }
