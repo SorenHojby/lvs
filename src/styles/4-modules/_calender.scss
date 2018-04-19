@@ -25,6 +25,7 @@
         margin-bottom: 2rem;
         display: flex;
         justify-content: space-between;
+        transition: 0.5s ease;
         p {
             padding: 0px;
             margin: 0px;
@@ -118,6 +119,14 @@
         box-shadow: $sec_box_shadow;
     }
      
+
+
+    .col-lg-10.module_calender_wrapper:hover {
+        transform: scale(1.02);
+        transition: 0.5s ease;
+        z-index: 2;
+    }
+
 
 #module_calender_row_grid {
     .module_calender_grid_wrapper {

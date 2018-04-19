@@ -14,9 +14,9 @@
 <body>
     <div data-includeHTML="src/modules/header.html"></div>
 
-    <section class="container module_hero_section text-center" style="background-image:url(build/images/UL-DASK-302.png)">
+    <section class="container module_hero_section text-center " style="background-image:url(build/images/UL-DASK-302.png)">
         <div class="row">
-            <div class="module_hero_card col-lg-7">
+            <div class="module_hero_card col-lg-7 rellax"  data-rellax-speed="1.5" >
                 <h1 class="underline">AKTIVITETER</h1>
                 <p class="text-left">Aktiviteterne i IDVI spænder bredt over mange discipliner. Formålet er at skabe positive oplevelser omkring
                     et fællesskab, hvor idræt ikke blot er en leg, men en seriøs sport, hvor der også er plads til forskellige
@@ -54,10 +54,10 @@
                     </div>
 
                     <div class="module_calender_view d-flex">
-                        <div class="module_calender_box_view">
+                        <div class="module_calender_box_view" id="module_calender_box_view">
                             <i data-feather="grid"></i>
                         </div>
-                        <div class="module_calender_list_view">
+                        <div class="module_calender_list_view" id="module_calender_list_view">
                             <i data-feather="list"></i>
 
                         </div>
@@ -448,8 +448,6 @@
     </script>
 
 
-    
-
     <script>
         $("#module_calender_search").on('keyup', function () {
             var matcher = new RegExp($(this).val(), 'gi');
@@ -457,7 +455,16 @@
                 return matcher.test($(this).find('.module_calender_date , .module_calender_event_heading').text())
             }).hide();
         });
+
+$(document).ready(function() {
+    $('#list').click(function(event){event.preventDefault();$('#products .item').addClass('list-group-item');});
+    $('#grid').click(function(event){event.preventDefault();$('#products .item').removeClass('list-group-item');$('#products .item').addClass('grid-group-item');});
+});
+
     </script>
+
+
+
 
 </body>
 
