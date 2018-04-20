@@ -25,22 +25,45 @@
 			margin: 0 auto;
 			/*stacking fieldsets above each other*/
 			position: relative;
+
+			#successPopUp {
+				background-color: $main_color_green;
+				color: $sec_text_color;
+				margin: 0 auto;
+				padding: 45px 105px 95px;
+
+				svg:not(:root) {
+					width: 3rem;
+					height: 3rem;
+					vertical-align: middle;
+					color: $sec_text_color;
+				}
+			}
 			
 			label {
 				width: 187px;
 				height: 187px;
+				box-shadow: $sec_box_shadow;
 
 				figure {
-					i {
-						.fa-calendar::before {
-						font-size: 4.5rem;
-						}
+					.far.fa-calendar::before, .fas.fa-child::before {
+						font-size: 72px;
+						color: $main_color_blue_lagoon;
+					}
+					figcaption {
+						padding-top: 20px;
+						color: $main_text_color;
+						font-weight: 1000;
 					}
 				}
+
+				input[type=checkbox] {
+					display: none;
+				} 
 			}
-			input[type=checkbox] {
-				display: none;
-			} 
+			label + input[type=checkbox]:checked {
+				border: 2px solid red;
+			}
 		}
 
 		/*Hide all except first fieldset*/
@@ -58,16 +81,21 @@
 		}
 
 		/*buttons*/
-		.action-button {
-			width: 32px;
-			height: 32px;
-			background: $sec_bg_color;
+		button {
 			color: $main_color_blue_lagoon;
-			border: 2px solid $main_color_blue_lagoon;
-			border-radius: 50px;
+			background: transparent;
 			cursor: pointer;
 			padding: 0px;
 			margin: 35px 16px;
+			border: none;
+
+			svg:not(:root) {
+				width: 32px;
+				height: 32px;
+			}
+		}
+		button:focus {
+			outline: 0;
 		}
 
 		/*progressbar*/
@@ -90,7 +118,7 @@
 				color: $main_text_color;
 				background: $sec_bg_color;
 				border-radius: 50px;
-				margin: auto;
+				margin: 0 auto 9px;
 			}
 			/*progressbar line*/
 			li:after {
@@ -103,12 +131,12 @@
 				top: 16px;
 				z-index: -1;
 			}
-			li:first-child:after {
+			li:first-child:after, li:last-child:before, li:last-child:after {
 				/*line before the first step removed*/
 				content: none; 
 			}
 			li.active:before,  li.active:after{
-				background: $main_color_blue;
+				background: $main_color_blue_lagoon;
 				color: $sec_text_color;
 			}
 		}
@@ -118,8 +146,44 @@
 			padding: 1.2rem;
 		}
 		.fs-title-white {
-			font-size: 3rem;
+			font-size: 2.5rem;
 			color: $sec_text_color;
+			opacity: 1;
+		}
+	}
+}
+
+//Media queries
+@media screen and (max-width: 768px) {
+	#overlay {
+		#msform {
+			max-width: 500px;
+			
+			fieldset {
+				padding: 60px 20px 0;
+
+				label {
+					width: auto;
+					height: 120px;
+	
+					figure {
+						.far.fa-calendar::before, .fas.fa-child::before {
+							font-size: 35px;
+						}
+						figcaption {
+							font-size: 0.65rem;
+							padding-top: 10px;
+						}
+					}
+				}
+			}
+			#progressbar {
+				li {
+					b {
+						display: none;
+					}
+				}
+			}
 		}
 	}
 }
