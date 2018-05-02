@@ -8,8 +8,10 @@ body {
 }
 
 a {
+    color: $main_text_color;
     &:hover {
         text-decoration: none;
+        color: $main_text_color;
     }
 }
 
