@@ -18,10 +18,11 @@
                 <section class="container">
                     <div class="row">
                         <ul id="progressbar" class="col-12">
-                            <li class="active">Postnummer</li>
-                            <li>Værested</li>
-                            <li>Oplysninger</li>
-                            <li>Interesser</li>
+                            <li class="active"><b>Postnummer</b></li>
+                            <li><b>Værested</b></li>
+                            <li><b>Oplysninger</b></li>
+                            <li><b>Interesser</b></li>
+                            <li></li>
                         </ul>
                     </div>
                 </section>
@@ -31,29 +32,29 @@
                         <fieldset class="col-12">
                             <h2 class="fs-title">Opret dig som frivillig</h2>
                             <input type="text" name="postnummer" placeholder="Indtast dit postnummer" />
-                            <input type="button" name="previous" class="previous action-button" value="<" disabled />
-                            <input type="button" name="next" class="next action-button" value=">" />
+                            <button type="button" class="previous" disabled><i data-feather="arrow-left-circle"></i></button>
+                            <button type="button" class="next"><i data-feather="arrow-right-circle"></i></button>
                         </fieldset>
                         <fieldset class="col-12">
                             <h2 class="fs-title">Vælg væresteder</h2>
                             <input type="text" name="Dagvarmestuen" placeholder="Dagvarmestuen" />
                             <input type="text" name="Paraplyen" placeholder="Paraplyen" />
                             <input type="text" name="Reden" placeholder="Reden i Odense" />
-                            <input type="button" name="previous" class="previous action-button" value="<" />
-                            <input type="button" name="next" class="next action-button" value=">" />
+                            <button type="button" class="previous"><i data-feather="arrow-left-circle"></i></button>
+                            <button type="button" class="next"><i data-feather="arrow-right-circle"></i></button>
                         </fieldset>
                         <fieldset class="col-12">
                             <h2 class="fs-title">Dine oplysninger</h2>
                             <input type="text" name="name" placeholder="Dit navn" />
                             <input type="text" name="address" placeholder="Din addresse" />
                             <input type="text" name="email" placeholder="Din email" />
-                            <input type="button" name="previous" class="previous action-button" value="<" />
-                            <input type="button" name="next" class="next action-button" value=">" />
+                            <button type="button" class="previous"><i data-feather="arrow-left-circle"></i></button>
+                            <button type="button" class="next"><i data-feather="arrow-right-circle"></i></button>
                         </fieldset>
                         <fieldset class="col-12">
                             <div class="row">
                                 <div class="col-4">
-                                    <label>
+                                    <label class="d-flex justify-content-center align-items-center">
                                         <figure>
                                             <div><i class="far fa-calendar"></i></div>
                                             <figcaption>Events</figcaption>
@@ -62,7 +63,7 @@
                                     </label>
                                 </div>
                                 <div class="col-4">
-                                    <label>
+                                    <label class="d-flex justify-content-center align-items-center">
                                         <figure>
                                             <div><i class="far fa-calendar"></i></div>
                                             <figcaption>Genbrugsbutiken</figcaption>
@@ -71,7 +72,7 @@
                                     </label>
                                 </div>
                                 <div class="col-4">
-                                    <label>
+                                    <label class="d-flex justify-content-center align-items-center">
                                         <figure>
                                             <div><i class="fas fa-child"></i></div>
                                             <figcaption>Sport</figcaption>
@@ -80,13 +81,15 @@
                                     </label>
                                 </div>
                             </div>
-                            <input type="button" name="previous" class="previous action-button" value="<" />
-                            <input type="submit" name="submit" class="submit action-button" value=">" />
+                            <button type="button" class="previous"><i data-feather="arrow-left-circle"></i></button>
+                            <button type="button" class="next"><i data-feather="arrow-right-circle"></i></button>
                         </fieldset>
                         <fieldset class="col-12">
-                            <h1 class="fs-title-white">Tak for din hjælp</h1>
-                            <input type="text" name="fname" placeholder="First Name" />
-                            <input type="button" name="previous" class="previous action-button" value="<" />
+                            <div id="successPopUp">
+                                <h1 class="fs-title-white">Tak for din hjælp</h1>
+                                <i data-feather="check-circle"></i>
+                            </div>
+                            <button type="button" class="previous"><i data-feather="arrow-left-circle"></i></button>
                         </fieldset>
                     </div>
                 </section>
