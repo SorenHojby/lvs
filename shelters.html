@@ -54,30 +54,30 @@
                         <fieldset class="col-12">
                             <div class="row">
                                 <div class="col-4">
-                                    <label class="d-flex justify-content-center align-items-center">
+                                    <label id="option-one" class="d-flex justify-content-center align-items-center">
                                         <figure>
                                             <div><i class="far fa-calendar"></i></div>
                                             <figcaption>Events</figcaption>
                                         </figure>
-                                        <input type="checkbox" name="image" value="events" checked = "checked"/>
+                                        <input type="checkbox" id="eventscheck" name="image" value="events" checked = "checked"/>
                                     </label>
                                 </div>
                                 <div class="col-4">
-                                    <label class="d-flex justify-content-center align-items-center">
+                                    <label id="option-two" class="d-flex justify-content-center align-items-center">
                                         <figure>
                                             <div><i class="far fa-calendar"></i></div>
                                             <figcaption>Genbrugsbutiken</figcaption>
                                         </figure>
-                                        <input type="checkbox" name="image" value="genbrugsbutiken"/>
+                                        <input type="checkbox" id="genbrugscheck" name="image" value="genbrugsbutiken"/>
                                     </label>
                                 </div>
                                 <div class="col-4">
-                                    <label class="d-flex justify-content-center align-items-center">
+                                    <label id="option-three" class="d-flex justify-content-center align-items-center">
                                         <figure>
                                             <div><i class="fas fa-child"></i></div>
                                             <figcaption>Sport</figcaption>
                                         </figure>
-                                        <input type="checkbox" name="image" value="sport"/>
+                                        <input type="checkbox" id="sportscheck" name="image" value="sport"/>
                                     </label>
                                 </div>
                             </div>
@@ -364,6 +364,38 @@
         function off() {
             document.getElementById("overlay").style.display = "none";
         }
+    </script>
+
+    <script>
+        $("#option-one").click(function (e) {
+            if ($('#eventscheck').prop('checked') == true) {
+                $('#eventscheck').attr('checked', false);
+                $("#option-one").removeClass("yellowed");
+            } else {
+                $('#eventscheck').attr('checked', true);
+                $("#option-one").addClass("yellowed");
+            }
+        });
+
+        $("#option-two").click(function (e) {
+            if ($('#genbrugscheck').prop('checked') == true) {
+                $('#genbrugscheck').attr('checked', false);
+                $("#option-two").removeClass("yellowed");
+            } else {
+                $('#genbrugscheck').attr('checked', true);
+                $("#option-two").addClass("yellowed");
+            }
+        });
+
+        $("#option-three").click(function (e) {
+            if ($('#sportscheck').prop('checked') == true) {
+                $('#sportscheck').attr('checked', false);
+                $("#option-three").removeClass("yellowed");
+            } else {
+                $('#sportscheck').attr('checked', true);
+                $("#option-three").addClass("yellowed");
+            }
+        });
     </script>
 
     <script>

@@ -10,7 +10,6 @@
 	bottom: 0;
 	background-color: rgba($color: #384047, $alpha: 0.38);
 	z-index: 200;
-	/*form styles*/
 
 	#msform {
 		max-width: 770px;
@@ -43,7 +42,6 @@
 			label {
 				width: 187px;
 				height: 187px;
-				box-shadow: $sec_box_shadow;
 
 				figure {
 					.far.fa-calendar::before, .fas.fa-child::before {
@@ -59,10 +57,11 @@
 
 				input[type=checkbox] {
 					display: none;
-				} 
+				}
 			}
-			label + input[type=checkbox]:checked {
-				border: 2px solid red;
+
+			.yellowed {
+				box-shadow: $sec_box_shadow;
 			}
 		}
 
