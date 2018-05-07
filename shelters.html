@@ -11,93 +11,94 @@
     <title></title>
 </head>
 
-<body>
-    <div id="overlay">
-        <section id="signup">
-            <form id="msform">
-                <section class="container">
-                    <div class="row">
-                        <ul id="progressbar" class="col-12">
-                            <li class="active"><b>Postnummer</b></li>
-                            <li><b>Værested</b></li>
-                            <li><b>Oplysninger</b></li>
-                            <li><b>Interesser</b></li>
-                            <li></li>
-                        </ul>
-                    </div>
-                </section>
-                
-                <section class="container">
-                    <div class="row">
-                        <fieldset class="col-12">
-                            <h2 class="fs-title">Opret dig som frivillig</h2>
-                            <input type="text" name="postnummer" placeholder="Indtast dit postnummer" />
-                            <button type="button" class="previous" disabled><i data-feather="arrow-left-circle"></i></button>
-                            <button type="button" class="next"><i data-feather="arrow-right-circle"></i></button>
-                        </fieldset>
-                        <fieldset class="col-12">
-                            <h2 class="fs-title">Vælg væresteder</h2>
-                            <input type="text" name="Dagvarmestuen" placeholder="Dagvarmestuen" />
-                            <input type="text" name="Paraplyen" placeholder="Paraplyen" />
-                            <input type="text" name="Reden" placeholder="Reden i Odense" />
-                            <button type="button" class="previous"><i data-feather="arrow-left-circle"></i></button>
-                            <button type="button" class="next"><i data-feather="arrow-right-circle"></i></button>
-                        </fieldset>
-                        <fieldset class="col-12">
-                            <h2 class="fs-title">Dine oplysninger</h2>
-                            <input type="text" name="name" placeholder="Dit navn" />
-                            <input type="text" name="address" placeholder="Din addresse" />
-                            <input type="text" name="email" placeholder="Din email" />
-                            <button type="button" class="previous"><i data-feather="arrow-left-circle"></i></button>
-                            <button type="button" class="next"><i data-feather="arrow-right-circle"></i></button>
-                        </fieldset>
-                        <fieldset class="col-12">
-                            <div class="row">
-                                <div class="col-4">
-                                    <label id="option-one" class="d-flex justify-content-center align-items-center">
-                                        <figure>
-                                            <div><i class="far fa-calendar"></i></div>
-                                            <figcaption>Events</figcaption>
-                                        </figure>
-                                        <input type="checkbox" id="eventscheck" name="image" value="events" checked = "checked"/>
-                                    </label>
-                                </div>
-                                <div class="col-4">
-                                    <label id="option-two" class="d-flex justify-content-center align-items-center">
-                                        <figure>
-                                            <div><i class="far fa-calendar"></i></div>
-                                            <figcaption>Genbrugsbutiken</figcaption>
-                                        </figure>
-                                        <input type="checkbox" id="genbrugscheck" name="image" value="genbrugsbutiken"/>
-                                    </label>
-                                </div>
-                                <div class="col-4">
-                                    <label id="option-three" class="d-flex justify-content-center align-items-center">
-                                        <figure>
-                                            <div><i class="fas fa-child"></i></div>
-                                            <figcaption>Sport</figcaption>
-                                        </figure>
-                                        <input type="checkbox" id="sportscheck" name="image" value="sport"/>
-                                    </label>
-                                </div>
+<div id="overlay">
+    <section id="signup">
+        <form id="msform">
+            <section class="container">
+                <div class="row">
+                    <ul id="progressbar" class="col-12">
+                        <li class="active"><b>Postnummer</b></li>
+                        <li><b>Værested</b></li>
+                        <li><b>Oplysninger</b></li>
+                        <li><b>Interesser</b></li>
+                        <li></li>
+                    </ul>
+                </div>
+            </section>
+            
+            <section class="container">
+                <div class="row">
+                        <div id="closeBtn" onClick="off();toggle();"><i data-feather="x"></i></div>
+                    <fieldset class="col-12">
+                        <h2 class="fs-title">Opret dig som frivillig</h2>
+                        <input type="text" name="postnummer" placeholder="Indtast dit postnummer" />
+                        <button type="button" class="previous" disabled><i data-feather="arrow-left-circle"></i></button>
+                        <button type="button" class="next"><i data-feather="arrow-right-circle"></i></button>
+                    </fieldset>
+                    <fieldset class="col-12">
+                        <h2 class="fs-title">Vælg væresteder</h2>
+                        <input type="text" name="Dagvarmestuen" placeholder="Dagvarmestuen" />
+                        <input type="text" name="Paraplyen" placeholder="Paraplyen" />
+                        <input type="text" name="Reden" placeholder="Reden i Odense" />
+                        <button type="button" class="previous"><i data-feather="arrow-left-circle"></i></button>
+                        <button type="button" class="next"><i data-feather="arrow-right-circle"></i></button>
+                    </fieldset>
+                    <fieldset class="col-12">
+                        <h2 class="fs-title">Dine oplysninger</h2>
+                        <input type="text" name="name" placeholder="Dit navn" />
+                        <input type="text" name="address" placeholder="Din addresse" />
+                        <input type="text" name="email" placeholder="Din email" />
+                        <button type="button" class="previous"><i data-feather="arrow-left-circle"></i></button>
+                        <button type="button" class="next"><i data-feather="arrow-right-circle"></i></button>
+                    </fieldset>
+                    <fieldset class="col-12">
+                        <div class="row">
+                            <div class="col-4">
+                                <label id="option-one" class="d-flex justify-content-center align-items-center">
+                                    <figure>
+                                        <div><i class="far fa-calendar"></i></div>
+                                        <figcaption>Events</figcaption>
+                                    </figure>
+                                    <input type="checkbox" id="eventscheck" name="image" value="events" checked='checked'/>
+                                </label>
                             </div>
-                            <button type="button" class="previous"><i data-feather="arrow-left-circle"></i></button>
-                            <button type="button" class="next"><i data-feather="arrow-right-circle"></i></button>
-                        </fieldset>
-                        <fieldset class="col-12">
-                            <div id="successPopUp">
-                                <h1 class="fs-title-white">Tak for din hjælp</h1>
-                                <i data-feather="check-circle"></i>
+                            <div class="col-4">
+                                <label id="option-two" class="d-flex justify-content-center align-items-center">
+                                    <figure>
+                                        <div><i class="far fa-calendar"></i></div>
+                                        <figcaption>Genbrugsbutiken</figcaption>
+                                    </figure>
+                                    <input type="checkbox" id="genbrugscheck" name="image" value="genbrugsbutiken"/>
+                                </label>
                             </div>
-                            <button type="button" class="previous"><i data-feather="arrow-left-circle"></i></button>
-                            <button type="button" class="submit" onclick="off()"><i data-feather="x"></i></button>
-                        </fieldset>
-                    </div>
-                </section>
-            </form>
-        </section>
-    </div>
+                            <div class="col-4">
+                                <label id="option-three" class="d-flex justify-content-center align-items-center">
+                                    <figure>
+                                        <div><i class="fas fa-child"></i></div>
+                                        <figcaption>Sport</figcaption>
+                                    </figure>
+                                    <input type="checkbox" id="sportscheck" name="image" value="sport"/>
+                                </label>
+                            </div>
+                        </div>
+                        <button type="button" class="previous"><i data-feather="arrow-left-circle"></i></button>
+                        <button type="button" class="next"><i data-feather="arrow-right-circle"></i></button>
+                    </fieldset>
+                    <fieldset class="col-12">
+                        <div id="successPopUp">
+                            <h1 class="fs-title-white">Tak for din hjælp</h1>
+                            <i data-feather="check-circle"></i>
+                        </div>
+                        <button type="button" class="previous"><i data-feather="arrow-left-circle"></i></button>
+                        <button type="button" class="submit" onclick="off();toggle();"><i data-feather="x"></i></button>
+                    </fieldset>
+                </div>
+            </section>
+        </form>
+    </section>
+</div>
 
+<body>
     <div data-includeHTML="src/modules/header.html"></div>
 
     <section class="container module_hero_section text-center">
@@ -366,7 +367,7 @@
         }
     </script>
 
-    <script>
+    <script> //choosing options on step 3 (checkboxes)
         $("#option-one").click(function (e) {
             if ($('#eventscheck').prop('checked') == true) {
                 $('#eventscheck').attr('checked', false);
@@ -402,6 +403,12 @@
         $("div[data-includeHTML]").each(function() {
             $(this).load($(this).attr("data-includeHTML"));
         });
+    </script>
+
+    <script>
+        if ($('#overlay').prop('block') == true) {
+            $('body').click(function(){ $('#overlay').hide()});
+        }
     </script>
 
     <script>
@@ -468,18 +475,15 @@
     </script>
 
     <script>
-        console.log("Toggle function initialized");
         var on = false;
 
         function toggle() {
             if (on == false) {
                 document.getElementById("overlay").style.display = "block";
-                console.log("display is none, changed to block")
                 on = true;
             }
             else {
                 document.getElementById("overlay").style.display = "none";
-                console.log("display: changed to none");
                 on = false;
             }
         }
