@@ -10,21 +10,16 @@
 	bottom: 0;
 	background-color: rgba($color: #384047, $alpha: 0.38);
 	z-index: 200;
-	/*form styles*/
 
 	#msform {
 		max-width: 770px;
 		margin: auto;
 		text-align: center;
 		position: relative;
-
-		fieldset {
-			background: $sec_bg_color;
-			border: 0 none;
-			padding: 90px 90px 10px;
-			margin: 0 auto;
-			/*stacking fieldsets above each other*/
+		
+		.row {
 			position: relative;
+
 
 			#successPopUp {
 				background-color: $main_color_green;
@@ -54,7 +49,67 @@
 						padding-top: 20px;
 						color: $main_text_color;
 						font-weight: 1000;
+
+
+						#closeBtn {
+							position: absolute;
+							right: 10px;
+							top: 10px;
+							z-index: 99;
+
+							svg:not(:root) {
+								width: 2rem;
+								height: 2rem;
+								vertical-align: middle;
+								color: lightslategray;
+							}
+						}
+
+			fieldset {
+				background: $sec_bg_color;
+				border: 0 none;
+				padding: 90px 90px 10px;
+				margin: 0 auto;
+				/*stacking fieldsets above each other*/
+				position: relative;
+	
+				#successPopUp {
+					background-color: $main_color_green;
+					color: $sec_text_color;
+					margin: 0 auto;
+					padding: 45px 105px 95px;
+	
+					svg:not(:root) {
+						width: 3rem;
+						height: 3rem;
+						vertical-align: middle;
+						color: $sec_text_color;
 					}
+				}
+				
+				label {
+					width: 187px;
+					height: 187px;
+	
+					figure {
+						.far.fa-calendar::before, .fas.fa-child::before {
+							font-size: 72px;
+							color: $main_color_blue_lagoon;
+						}
+						figcaption {
+							padding-top: 20px;
+							color: $main_text_color;
+							font-weight: 1000;
+						}
+					}
+	
+					input[type=checkbox] {
+						display: none;
+					}
+				}
+	
+				.yellowed {
+					box-shadow: $sec_box_shadow;
 				}
 
 				input[type=checkbox] {

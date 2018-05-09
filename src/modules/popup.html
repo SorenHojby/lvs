@@ -11,63 +11,95 @@
     <title></title>
 </head>
 
-<body>
-    <div id="overlay">
-        <section id="signup">
-            <form id="msform">
-                <section class="container">
-                    <div class="row">
-                        <ul id="progressbar" class="col-12">
-                            <li class="active">Postnummer</li>
-                            <li>Værested</li>
-                            <li>Oplysninger</li>
-                            <li>Interesser</li>
-                        </ul>
-                    </div>
-                </section>
-                
-                <section class="container">
-                    <div class="row">
-                        <fieldset class="col-12">
-                            <h2 class="fs-title">Opret dig som frivillig</h2>
-                            <input type="text" name="postnummer" placeholder="Indtast dit postnummer" />
-                            <input type="button" name="previous" class="previous action-button" value="<" />
-                            <input type="button" name="next" class="next action-button" value=">" />
-                        </fieldset>
-                        <fieldset class="col-12">
-                            <h2 class="fs-title">Vælg væresteder</h2>
-                            <input type="text" name="Dagvarmestuen" placeholder="Dagvarmestuen" />
-                            <input type="text" name="Paraplyen" placeholder="Paraplyen" />
-                            <input type="text" name="Reden" placeholder="Reden i Odense" />
-                            <input type="button" name="previous" class="previous action-button" value="<" />
-                            <input type="button" name="next" class="next action-button" value=">" />
-                        </fieldset>
-                        <fieldset class="col-12">
-                            <h2 class="fs-title">Dine oplysninger</h2>
-                            <input type="text" name="name" placeholder="Dit navn" />
-                            <input type="text" name="address" placeholder="Din addresse" />
-                            <input type="text" name="email" placeholder="Din email" />
-                            <input type="button" name="previous" class="previous action-button" value="<" />
-                            <input type="button" name="next" class="next action-button" value=">" />
-                        </fieldset>
-                        <fieldset class="col-12">
-                            <input type="text" name="fname" placeholder="First Name" />
-                            <input type="text" name="lname" placeholder="Last Name" />
-                            <input type="text" name="phone" placeholder="Phone" />
-                            <input type="button" name="previous" class="previous action-button" value="<" />
-                            <input type="submit" name="submit" class="submit action-button" value=">" />
-                        </fieldset>
-                        <fieldset class="col-12">
+<div id="overlay">
+    <section id="signup">
+        <form id="msform">
+            <section class="container">
+                <div class="row">
+                    <ul id="progressbar" class="col-12">
+                        <li class="active"><b>Postnummer</b></li>
+                        <li><b>Værested</b></li>
+                        <li><b>Oplysninger</b></li>
+                        <li><b>Interesser</b></li>
+                        <li></li>
+                    </ul>
+                </div>
+            </section>
+            
+            <section class="container">
+                <div class="row">
+                        <div id="closeBtn" onClick="off();toggle();"><i data-feather="x"></i></div>
+                    <fieldset class="col-12">
+                        <h2 class="fs-title">Opret dig som frivillig</h2>
+                        <input type="text" name="postnummer" placeholder="Indtast dit postnummer" />
+                        <button type="button" class="previous" disabled><i data-feather="arrow-left-circle"></i></button>
+                        <button type="button" class="next"><i data-feather="arrow-right-circle"></i></button>
+                    </fieldset>
+                    <fieldset class="col-12">
+                        <h2 class="fs-title">Vælg væresteder</h2>
+                        <input type="text" name="Dagvarmestuen" placeholder="Dagvarmestuen" />
+                        <input type="text" name="Paraplyen" placeholder="Paraplyen" />
+                        <input type="text" name="Reden" placeholder="Reden i Odense" />
+                        <button type="button" class="previous"><i data-feather="arrow-left-circle"></i></button>
+                        <button type="button" class="next"><i data-feather="arrow-right-circle"></i></button>
+                    </fieldset>
+                    <fieldset class="col-12">
+                        <h2 class="fs-title">Dine oplysninger</h2>
+                        <input type="text" name="name" placeholder="Dit navn" />
+                        <input type="text" name="address" placeholder="Din addresse" />
+                        <input type="text" name="email" placeholder="Din email" />
+                        <button type="button" class="previous"><i data-feather="arrow-left-circle"></i></button>
+                        <button type="button" class="next"><i data-feather="arrow-right-circle"></i></button>
+                    </fieldset>
+                    <fieldset class="col-12">
+                        <div class="row">
+                            <div class="col-4">
+                                <label id="option-one" class="d-flex justify-content-center align-items-center">
+                                    <figure>
+                                        <div><i class="far fa-calendar"></i></div>
+                                        <figcaption>Events</figcaption>
+                                    </figure>
+                                    <input type="checkbox" id="eventscheck" name="image" value="events" checked='checked'/>
+                                </label>
+                            </div>
+                            <div class="col-4">
+                                <label id="option-two" class="d-flex justify-content-center align-items-center">
+                                    <figure>
+                                        <div><i class="far fa-calendar"></i></div>
+                                        <figcaption>Genbrugsbutiken</figcaption>
+                                    </figure>
+                                    <input type="checkbox" id="genbrugscheck" name="image" value="genbrugsbutiken"/>
+                                </label>
+                            </div>
+                            <div class="col-4">
+                                <label id="option-three" class="d-flex justify-content-center align-items-center">
+                                    <figure>
+                                        <div><i class="fas fa-child"></i></div>
+                                        <figcaption>Sport</figcaption>
+                                    </figure>
+                                    <input type="checkbox" id="sportscheck" name="image" value="sport"/>
+                                </label>
+                            </div>
+                        </div>
+                        <button type="button" class="previous"><i data-feather="arrow-left-circle"></i></button>
+                        <button type="button" class="next"><i data-feather="arrow-right-circle"></i></button>
+                    </fieldset>
+                    <fieldset class="col-12">
+                        <div id="successPopUp">
                             <h1 class="fs-title-white">Tak for din hjælp</h1>
-                            <input type="text" name="fname" placeholder="First Name" />
-                            <input type="button" name="close" class="close action-button" value="x" />
-                        </fieldset>
-                    </div>
-                </section>
-            </form>
-        </section>
-    </div>
+                            <i data-feather="check-circle"></i>
+                        </div>
+                        <button type="button" class="previous"><i data-feather="arrow-left-circle"></i></button>
+                        <button type="button" class="submit" onclick="off();toggle();"><i data-feather="x"></i></button>
+                    </fieldset>
+                </div>
+            </section>
+        </form>
+    </section>
+</div>
     
+
+<body>    
     <section class="blivfrivillig d-flex align-items-center" style="background-image: url(../../build/images/people.png)">
         <div class="container">
             <div class="row">
@@ -86,96 +118,138 @@
         </div>
     </section>
 
-<script src="../../build/vendor/jquery/jquery-3.3.1.min.js"></script>
-<script>
-    function on() {
-        document.getElementById("overlay").style.display = "block";
-    }
-    function off() {
-        document.getElementById("overlay").style.display = "none";
-    }
-</script>
+    <script src="build/vendor/jquery/jquery-3.3.1.min.js"></script>
 
-<script>
-    var current_fs, next_fs, previous_fs; //fieldsets
-
-    $(".next").click(function () {
-
-        current_fs = $(this).parent();
-        next_fs = $(this).parent().next();
-
-        //activate next step on progressbar using the index of next_fs
-        $("#progressbar li").eq($("fieldset").index(next_fs)).addClass("active");
-
-        //show the next fieldset
-        next_fs.show();
-        //hide the current fieldset with style
-        current_fs.animate({ opacity: 0 }, {
-            step: function (now, mx) {
-                scale = 1 - (1 - now) * 0.2;
-                left = (now * 50) + "%";
-                opacity = 1 - now;
-                current_fs.css({
-                    'transform': 'scale(' + scale + ')',
-                    'position': 'absolute'
-                });
-                next_fs.css({ 'left': left, 'opacity': opacity });
-            },
-            duration: 500,
-            complete: function () {
-                current_fs.hide();
-            },
-        });
-    });
-
-    $(".previous").click(function () {
-
-        current_fs = $(this).parent();
-        previous_fs = $(this).parent().prev();
-
-        //de-activate current step on progressbar
-        $("#progressbar li").eq($("fieldset").index(current_fs)).removeClass("active");
-
-        //show the previous fieldset
-        previous_fs.show();
-        //hide the current fieldset with style
-        current_fs.animate({ opacity: 0 }, {
-            step: function (now, mx) {
-                scale = 0.8 + (1 - now) * 0.2;
-                left = ((1 - now) * 50) + "%";
-                opacity = 1 - now;
-                current_fs.css({ 'left': left });
-                previous_fs.css({ 'transform': 'scale(' + scale + ')', 'opacity': opacity });
-            },
-            duration: 500,
-            complete: function () {
-                current_fs.hide();
-            },
-        });
-    });
-
-    $(".submit").click(function () {
-        return false;
-    })
-</script>
-
-<script>
-    console.log("Toggle function initialized");
-    var on = false;
-
-    function toggle() {
-        if (on == false) {
+    <script>
+        function on() {
             document.getElementById("overlay").style.display = "block";
-            console.log("display is none, changed to block")
-            on = true;
         }
-        else {
+        function off() {
             document.getElementById("overlay").style.display = "none";
-            console.log("display: changed to none");
-            on = false;
         }
-    }
-</script>
+    </script>
+
+    <script> //choosing options on step 3 (checkboxes)
+        $("#option-one").click(function (e) {
+            if ($('#eventscheck').prop('checked') == true) {
+                $('#eventscheck').attr('checked', false);
+                $("#option-one").removeClass("yellowed");
+            } else {
+                $('#eventscheck').attr('checked', true);
+                $("#option-one").addClass("yellowed");
+            }
+        });
+
+        $("#option-two").click(function (e) {
+            if ($('#genbrugscheck').prop('checked') == true) {
+                $('#genbrugscheck').attr('checked', false);
+                $("#option-two").removeClass("yellowed");
+            } else {
+                $('#genbrugscheck').attr('checked', true);
+                $("#option-two").addClass("yellowed");
+            }
+        });
+
+        $("#option-three").click(function (e) {
+            if ($('#sportscheck').prop('checked') == true) {
+                $('#sportscheck').attr('checked', false);
+                $("#option-three").removeClass("yellowed");
+            } else {
+                $('#sportscheck').attr('checked', true);
+                $("#option-three").addClass("yellowed");
+            }
+        });
+    </script>
+
+    <script>
+        $("div[data-includeHTML]").each(function() {
+            $(this).load($(this).attr("data-includeHTML"));
+        });
+    </script>
+
+    <script>
+        if ($('#overlay').prop('block') == true) {
+            $('body').click(function(){ $('#overlay').hide()});
+        }
+    </script>
+
+    <script>
+        var current_fs, next_fs, previous_fs; //fieldsets
+
+        $(".next").click(function () {
+
+            current_fs = $(this).parent();
+            next_fs = $(this).parent().next();
+
+            //activate next step on progressbar using the index of next_fs
+            $("#progressbar li").eq($("fieldset").index(next_fs)).addClass("active");
+
+            //show the next fieldset
+            next_fs.show();
+            //hide the current fieldset with style
+            current_fs.animate({ opacity: 0 }, {
+                step: function (now, mx) {
+                    scale = 1 - (1 - now) * 0.2;
+                    left = (now * 50) + "%";
+                    opacity = 1 - now;
+                    current_fs.css({
+                        'transform': 'scale(' + scale + ')',
+                        'position': 'absolute'
+                    });
+                    next_fs.css({ 'left': left, 'opacity': opacity });
+                },
+                duration: 500,
+                complete: function () {
+                    current_fs.hide();
+                },
+            });
+        });
+
+        $(".previous").click(function () {
+
+            current_fs = $(this).parent();
+            previous_fs = $(this).parent().prev();
+
+            //de-activate current step on progressbar
+            $("#progressbar li").eq($("fieldset").index(current_fs)).removeClass("active");
+
+            //show the previous fieldset
+            previous_fs.show();
+            //hide the current fieldset with style
+            current_fs.animate({ opacity: 0 }, {
+                step: function (now, mx) {
+                    scale = 0.8 + (1 - now) * 0.2;
+                    left = ((1 - now) * 50) + "%";
+                    opacity = 1 - now;
+                    current_fs.css({ 'left': left });
+                    previous_fs.css({ 'transform': 'scale(' + scale + ')', 'opacity': opacity });
+                },
+                duration: 500,
+                complete: function () {
+                    current_fs.hide();
+                },
+            });
+        });
+
+        $(".submit").click(function () {
+            return false;
+        })
+    </script>
+
+    <script>
+        var on = false;
+
+        function toggle() {
+            if (on == false) {
+                document.getElementById("overlay").style.display = "block";
+                on = true;
+            }
+            else {
+                document.getElementById("overlay").style.display = "none";
+                on = false;
+            }
+        }
+    </script>
 
 </body>
 </html>
