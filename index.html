@@ -26,17 +26,17 @@
                     <div class="row">
                         <div class="col-md-4 margin-25-bottom">
                             <i data-feather="home"></i>
-                            <p>100 VÆRESTEDER</p>
+                            <p> <span class="count">100</span>   VÆRESTEDER</p>
                         </div>
 
                         <div class="col-md-4 margin-25-bottom">
                             <i data-feather="calendar"></i>
-                            <p>50 EVENTS</p>
+                            <p><span class="count">50</span> EVENTS</p>
                         </div>
 
                         <div class="col-md-4">
                             <i data-feather="heart"></i>
-                            <p>2300 FRIVILLIGE</p>
+                            <p><span class="count">2300</span> FRIVILLIGE</p>
                         </div>
 
                     </div>
@@ -45,9 +45,9 @@
         </div>
     </section>
 
-    <section class="container module_hero_section text-center " style=" margin: 200px; background-image: url(build/images/Art-UL-0562009-final.png);">
+    <section class="container module_hero_section text-center rellax " data-rellax-speed="1.5"  style=" margin: 200px; background-image: url(build/images/Art-UL-0562009-final.png);">
         <div class="row">
-            <div class="module_hero_card col-lg-8">
+            <div class="module_hero_card col-lg-8 rellax" data-rellax-speed="1.5" >
                 <h1 class="underline">VORES MISSION</h1>
                 <p class="text-left">Et samfund med mod til mangfoldighed og reelle muligheder for den enkelte til et bedre liv. LVS er en landsforening i bevægelse. En landsforening, der vil noget. Ikke blot for sig selv, for sine medlemmer - værestederne og deres brugere
                     - men for hele samfundet.<br><br> Med visionen er sigtet klart: Et samfund, der ikke bare har plads til mangfoldighed – men har mod til mangfoldighed. Et samfund, der tør forskelligheden, der tør rumme det anderledes.</p>
@@ -319,6 +319,21 @@
             modal.style.display = "none";
         }
     }
+</script>
+
+
+<script>
+    $('.count').each(function () {
+    $(this).prop('Counter',0).animate({
+        Counter: $(this).text()
+    }, {
+        duration: 3000,
+        easing: 'swing',
+        step: function (now) {
+            $(this).text(Math.ceil(now));
+        }
+    });
+});
 </script>
 </body>
 

@@ -25,16 +25,23 @@
         margin-bottom: 2rem;
         display: flex;
         justify-content: space-between;
+        
         p {
             padding: 0px;
             margin: 0px;
             line-height: initial;
         }
         .module_calender_card {
+            display: flex;
             .module_calender_date {
                 background-color: $main_color_green;
                 width: 150px;
                 height: 150px;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                align-items: center;
+               
                 .p_lead {
                     color: $sec_text_color;
                     margin: 0px;
@@ -51,9 +58,24 @@
             }
             .module_calender_info {
                 padding-left: 2.875rem;
+                display: flex;
+                align-items: center;
             }
+
+
+            .module_calender_date_time_wrapper {
+                display: flex;
+            }
+
         }
+
+
         .module_calender_social_media {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            justify-content: space-around;
+            
             i {
                 opacity: 0.75;
             }
@@ -64,6 +86,10 @@
     }
     .module_calender_time {
         padding-right: 1rem;
+        display: flex;;
+    }
+    .module_calender_place {
+        display: flex;
     }
     .module_calender_filter,
     .module_calender_search {
@@ -80,41 +106,120 @@
     .module_calender_view {
         margin-right: -15px;
     }
+    #module_calender_search {
+        text-indent: 1em;
+        display: inline-block;
+        border: 0 none;
+        width: 0;
+        height: 3em;
+        background: url(/build/images/icons/search.svg) no-repeat 12px 12px;
+        -webkit-transition: .3s;
+        transition: .3s;
+        outline: none;
+        padding: 1em 1.5em;
+        cursor: pointer;
+        -webkit-appearance: none;
+        font-weight: inherit;
+        font-size: inherit;
+        font-family: inherit;
+        color: $main_text_color;
+        vertical-align: baseline;
+    }
+    input[type=search]::-webkit-search-cancel-button {
+        -webkit-appearance: none;
+    }
+    #module_calender_search:hover,
+    #module_calender_search:focus {
+        background: #fff url(../../../build/images/icons/search.svg) 12px 12px no-repeat;
+        box-shadow: $sec_box_shadow;
+    }
+    #module_calender_search:focus,
+    #module_calender_search:hover {
+        width: 120%;
+        cursor: text;
+        box-shadow: $sec_box_shadow;
+    }
+    .col-lg-10.module_calender_wrapper:hover {
+        transform: scale(1.02);
+        transition: 0.5s ease;
+        z-index: 2;
+    }
 
-   
-#module_calender_search {
-    background: rgba(255, 255, 255, 0.5) url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAAUCAYAAABvVQZ0AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAQBJREFUeNqslI0RgyAMhdENWIEVWMEVXIGO0BW6Ah2hHcGOoCPYEewINFzBe9IA9id37w4kfEZesHHOCSYUqSPJML+RJlELDwN1pMHxMZNMkr8RTgyz2YPH5LmtwXpIHkOFmKhIlxowDmYAycKnHAHYcTCsSpXOJCie6YWDnXKLGeHLN2stGaqDsXXrX3GFcYcLrfhjtKEhffQ792gYT2nT6pJDjCw4z7ZGdGipOIqNbXIwFUARmCbKpMfYxsWJBmCEDoW7+gYUTAU2s3HJrK3AJvMLkqGHFLgWXTckm+SfSQexs+tLRqwVfgvjgMsvMAT689S5M/sk/I14kO5PAQYAuk6L1q+EdHMAAAAASUVORK5CYII=) no-repeat 14px 14px;
-    text-indent: 1em;
-    display: inline-block;
-    border: 0 none;
-    width: 0;
-    height: 3em;
-    border-radius: 3em;
-    -webkit-transition: .3s;
-    transition: .3s;
-    outline: none;
-    padding: 1em 1.5em;
-    cursor: pointer;
-    -webkit-appearance: none;
-    font-weight: inherit;
-    font-size: inherit;
-    font-family: inherit;
-    color: $main_text_color;
-    vertical-align: baseline;
-}
+    .module_calender_box_view:hover {
+        opacity: 0.5;
+    }
+    .module_calender_list_view:hover {
+        opacity: 0.5;
+    }
 
-input[type=search]::-webkit-search-cancel-button {
-    -webkit-appearance: none;
-}
+    .module_grid_view {
+       
+        flex-direction: column;
+        padding-right: 0px;    
+        margin: 15px;
+            .module_calender_card  {
+                flex-direction: column;
+            }
+         .module_calender_social_media  {
+             flex-direction: row;
+             margin-top: 15px;
+             margin-bottom: 15px;
+         }
+         .module_calender_info {
+            padding-top: 15px;
+            padding-bottom: 15px;
+         }
+    }
+    .module_calender_card_img_wrapper {
+        display: flex;
+    }
 
-#module_calender_search:hover,
-#s:focus {
-    background: #fff url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABMAAAAUCAYAAABvVQZ0AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAT5JREFUeNqsVLtOw0AQtIMlRJHCEhUVMg398QEUSZnSfILzCXxDPsFu6XAJHWnTcS1lWsprKdmLxtKwvjVBYaTV7cm+udnX5fPb+yyBSmwhVmK/FfPZLyjUPhI8YtXYi23EOovs7PzyevAbsWeoGg5HNUHsCipX8F9TZDOstVgLPxIsxW6w3sHv6dJ2StkLbh6IPtR/AWRfSIET20H9D2U1hfaAgxY2KMagcBSmg9/rmwx0lBqTzGfHoVfVHxXgXzCjHNRHnnHke4vMGc2q0RBR0GSeCLlpLaJGFWKUszVuib32nih7iTFrjXAPyGnQ48c3Gu5AOVlMtMk6NZuf+FiC+AIhV0T+pBQ5ntXceIJKqKko2duJ2TwoLAz5QTVnagJaXWEO8y/wSMuKH9RTJoCTHyNZFidOUEfNu/8WYAAOXUT04MOtlwAAAABJRU5ErkJggg==) 14px 14px no-repeat;
-}
-
-#module_calender_search:focus {
-    width: 100%;
-    cursor: text;
-}
- 
+    #module_calender_row_grid {
+        .module_calender_grid_wrapper {
+            background-color: transparent;
+            margin-bottom: 2rem;
+            .row {
+                margin: 0;
+                background-color: $sec_bg_color;
+                box-shadow: $main_box_shadow;
+                p {
+                    padding: 0px;
+                    margin: 0px;
+                    line-height: initial;
+                }
+                .module_calender_grid_date {
+                    background-color: $main_color_green;
+                    width: 100%;
+                    height: 150px;
+                    .p_lead {
+                        color: $sec_text_color;
+                        margin: 0px;
+                        font-size: 2.625rem;
+                        opacity: 1;
+                    }
+                }
+                .module_calender_grid_img {
+                    padding: 0;
+                    img {
+                        width: 100%;
+                        height: 150px;
+                        object-fit: cover;
+                    }
+                }
+                .module_calender_grid_info {
+                    padding-left: 2rem;
+                    margin-top: 30px;
+                }
+                .module_calender_grid_social_media {
+                    margin-top: 40px;
+                    margin-bottom: 15px;
+                    padding-left: 2rem;
+                    i {
+                        opacity: 0.75;
+                        margin-right: 15px;
+                    }
+                }
+            }
+        }
+    }
 }

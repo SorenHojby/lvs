@@ -7,6 +7,14 @@ body {
     font-family: $font_paragraph;
 }
 
+a {
+    color: $main_text_color;
+    &:hover {
+        text-decoration: none;
+        color: $main_text_color;
+    }
+}
+
 //HEADING UNDERLINE
 .underline {
     display: inline-block;

@@ -5,6 +5,15 @@
         span {
             margin-left: 15px;
         }
+        div{           
+           svg{
+            margin-top:5px;
+           
+            }
+        }
+        #myInput{
+            border:none;
+        }
     }
     .underline {
         margin: auto auto 100px auto;
@@ -66,25 +75,73 @@
     }
 }
 
-.module_news_card_single {
-    .news_content {
-        h1 {
-            font-size: 2rem;
+
+
+
+
+/* SINGLE NEWS */
+.single_news {
+    .single_news_thumbnail {
+        div {
+            background-image: url(build/images/2014_08_08_LVS_Sommerfest_Fredag-556.png);
+            height: 450px;
+            object-fit: contain;
+            background-size: 100%;
+            background-repeat: no-repeat;
         }
-        .imagebox {
-            top: 0px;
-            position: relative;
-            background-image: url('../../build/images/news_big_img_1.jpg');
-            background-size: cover;
-            background-position: center;
-            height: 500px;
-            width: 100vw;
+        margin-bottom:25px;
+    }
+   
+    
+        .single_news_wrapper {
+            padding: 1.5rem 6rem;
+            border-width: 1px 0px 2px 0px;
+            border-style: solid;
+            border-color:  rgba(56,
+            64,
+            71, 0.10);
+           height:100%;
+           
+            p {
+                padding: 0px;
+                margin: 0px;
+                line-height: initial;
+            }
         }
-        .text_content {
-            position: relative;
-            top: 75px;
-            padding-left: 50px;
-            padding-right: 50px;
+    
+        .single_news_cta_info {
+            p {
+                padding-left: 0.5rem;
+                padding-right: 1rem;
+            }
+            .badge{
+                margin-left: 0.5rem;
+                padding: 0.5rem;
+                letter-spacing: 0.1rem;
+            }
+            .author{
+                width: 50px;
+                height:50px;
+            }
+            .authorbox{ 
+
+                line-height: 50px;
+                vertical-align: middle;
+                p{
+                    
+                    display: inline-block;
+                    padding-left:1rem;
+                }
+            }
+        }
+    
+        .single_news_sharing {
+            i {
+                margin: 0 1rem;
+                color: $main_text_color;
+                opacity: 0.8;
+            }
         }
     }
-}
+    
+
