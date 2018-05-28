@@ -136,10 +136,14 @@
         }
     
         .single_news_sharing {
-            i {
-                margin: 0 1rem;
-                color: $main_text_color;
-                opacity: 0.8;
+            p, a {
+                padding: 10px;
+
+                i {
+                    margin: 0 1rem;
+                    color: $main_text_color;
+                    opacity: 0.8;
+                }
             }
         }
     }
