@@ -20,50 +20,19 @@
 		.row {
 			position: relative;
 
-
-			#successPopUp {
-				background-color: $main_color_green;
-				color: $sec_text_color;
-				margin: 0 auto;
-				padding: 45px 105px 95px;
+			#closeBtn {
+				position: absolute;
+				right: 10px;
+				top: 10px;
+				z-index: 99;
 
 				svg:not(:root) {
-					width: 3rem;
-					height: 3rem;
+					width: 2rem;
+					height: 2rem;
 					vertical-align: middle;
-					color: $sec_text_color;
+					color: lightslategray;
 				}
 			}
-			
-			label {
-				width: 187px;
-				height: 187px;
-				box-shadow: $sec_box_shadow;
-
-				figure {
-					.far.fa-calendar::before, .fas.fa-child::before {
-						font-size: 72px;
-						color: $main_color_blue_lagoon;
-					}
-					figcaption {
-						padding-top: 20px;
-						color: $main_text_color;
-						font-weight: 1000;
-
-
-						#closeBtn {
-							position: absolute;
-							right: 10px;
-							top: 10px;
-							z-index: 99;
-
-							svg:not(:root) {
-								width: 2rem;
-								height: 2rem;
-								vertical-align: middle;
-								color: lightslategray;
-							}
-						}
 
 			fieldset {
 				background: $sec_bg_color;
@@ -111,13 +80,6 @@
 				.yellowed {
 					box-shadow: $sec_box_shadow;
 				}
-
-				input[type=checkbox] {
-					display: none;
-				} 
-			}
-			label + input[type=checkbox]:checked {
-				border: 2px solid red;
 			}
 		}
 
